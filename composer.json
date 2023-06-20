@@ -40,5 +40,5 @@
     },
     "extra": {
         "contao-manager-plugin": "Sarahsolus\\ContaobsdesignerBundle\\ContaoManager\\Plugin"
-    },
+    }
 }
