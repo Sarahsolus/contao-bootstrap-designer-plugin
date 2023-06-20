@@ -240,7 +240,7 @@
  * event. For more information see https://contao.org/manual.html.
  */
 
-use Sarahsolus\ContaobsdesignerBundle\EventListener\HookListener;
+use Sarahsolus\ContaoBsDesigneresignerBundle\EventListener\HookListener;
 
 $GLOBALS['TL_HOOKS']['getContentElement'][] = [HookListener::class, 'onGetContentElement'];
 $GLOBALS['TL_HOOKS']['parseWidget'][] = [HookListener::class, 'onParseWidget'];
