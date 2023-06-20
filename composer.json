@@ -1,0 +1,43 @@
+{
+    "name": "sarahsolus/contaobsdesigner",
+    "description": "Contao 4 Bootstrap Designer Bundle",
+    "license": "LGPL-3.0-or-later",
+    "type": "contao-bundle",
+    "authors": [
+        {
+            "name": "Leo Feyer",
+            "homepage": "https://github.com/leofeyer"
+        },
+        {
+            "name": "Contao Community",
+            "homepage": "https://contao.org/contributors"
+        }
+    ],
+    "homepage": "https://contao.org",
+    "support": {
+        "issues": "",
+        "source": ""
+    },
+    "require": {
+        "php": "^7.4",
+        "contao/core-bundle": "^4.9 || ^4.13"
+    },
+    "require-dev": {
+    },
+    "conflict": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Contao\\ContaobsdesignerBundle\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "contao/manager-plugin": true
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Contao\\ContaobsdesignerBundle\\ContaoManager\\Plugin"
+    },
+}
