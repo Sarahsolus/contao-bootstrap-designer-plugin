@@ -1,107 +1,107 @@
 /* brand color classes */
 
-.text-brand-primary, .text-brand-primary p {}
-.text-brand-secondary, .text-brand-secondary p {}
-.link-brand-primary, .link-brand-primary p {}
-.link-brand-secondary, .link-brand-secondary p {}
+.cbsd-text-brand-primary, .text-brand-primary p {}
+.cbsd-text-brand-secondary, .text-brand-secondary p {}
+.cbsd-link-brand-primary, .link-brand-primary p {}
+.cbsd-link-brand-secondary, .link-brand-secondary p {}
 
-.hintergrund-brand-primary {}
-.hintergrund-brand-secondary {}
-.hintergrund-background {}
-.hintergrund-transparent-brand-primary {}
-.hintergrund-transparent-brand-secondary {}
-.hintergrund-transparent-background {}
-.ueberschrift-brand-primary h1,.ueberschrift-brand-primary h2,.ueberschrift-brand-primary h3,.ueberschrift-brand-primary h4,.ueberschrift-brand-primary h5,.ueberschrift-brand-primary h6 {}
-.ueberschrift-brand-secondary h1,.ueberschrift-brand-secondary h2,.ueberschrift-brand-secondary h3,.ueberschrift-brand-secondary h4,.ueberschrift-brand-secondary h5,.ueberschrift-brand-secondary h6 {}
+.cbsd-bg-brand-primary {}
+.cbsd-bg-brand-secondary {}
+.cbsd-bg-background {}
+.cbsd-bg-transparent-brand-primary {}
+.cbsd-bg-transparent-brand-secondary {}
+.cbsd-bg-transparent-background {}
+.cbsd-hl-brand-primary h1,.cbsd-hl-brand-primary h2,.cbsd-hl-brand-primary h3,.cbsd-hl-brand-primary h4,.cbsd-hl-brand-primary h5,.cbsd-hl-brand-primary h6 {}
+.cbsd-hl-brand-secondary h1,.cbsd-hl-brand-secondary h2,.cbsd-hl-brand-secondary h3,.cbsd-hl-brand-secondary h4,.cbsd-hl-brand-secondary h5,.cbsd-hl-brand-secondary h6 {}
+
 
 /* text classes */
-.text-weiss, .text-weiss p {color: #ffffff !important;}
-.text-rot, .text-rot p {color: red !important;}
-.text-gelb, .text-gelb p {color: yellow !important;}
-.text-blau, .text-blau p {color: blue !important;}
-.text-orange, .text-orange p {color: orange !important;}
-.text-gruen, .text-gruen p {color: green !important;}
-.text-braun, .text-braun p {color: brown !important;}
-.text-schwarz, .text-schwarz p {color: black !important;}
-.text-grau, .text-grau p {color: grey !important;}
-.text-pink, .text-pink p {color: pink !important;}
-.text-violett, .text-violett p {color: violet !important;}
-.text-cyan, .text-cyan p {color: cyan !important;}
 
-.text-schatten, .text-schatten p {text-shadow: 1px 0 3px #333;}
-.text-breit, .text-breit p {font-weight:bold !important;}
-.text-unterstrichen, .text-unterstrichen p {text-decoration: underline !important;}
-.text-uppercase, .text-uppercase p {text-transform: uppercase !important;}
+.cbsd-text-white, .cbsd-text-white p {color: #ffffff !important;}
+.cbsd-text-red, .cbsd-text-red p {color: red !important;}
+.cbsd-text-yellow, .cbsd-text-yellow p {color: yellow !important;}
+.cbsd-text-blue, .cbsd-text-blue p {color: blue !important;}
+.cbsd-text-orange, .cbsd-text-orange p {color: orange !important;}
+.cbsd-text-green, .cbsd-text-green p {color: green !important;}
+.cbsd-text-brown, .cbsd-text-brown p {color: brown !important;}
+.cbsd-text-black, .cbsd-text-black p {color: black !important;}
+.cbsd-text-grey, .cbsd-text-grey p {color: grey !important;}
+.cbsd-text-pink, .cbsd-text-pink p {color: pink !important;}
+.cbsd-text-violet, .cbsd-text-violet p {color: violet !important;}
+.cbsd-text-cyan, .cbsd-text-cyan p {color: cyan !important;}
 
-/* headline classes
-.ueberschrift-weiss { h1,h2,h3,h4,h5,h6 {color: #ffffff !important;}}
-.ueberschrift-rot {h1,h2,h3,h4,h5,h6 {color: red !important;}}
-.ueberschrift-gelb {h1,h2,h3,h4,h5,h6 {color: yellow !important;}}
-.ueberschrift-blau {h1,h2,h3,h4,h5,h6 {color: blue !important;}}
-.ueberschrift-orange {h1,h2,h3,h4,h5,h6 {color: orange !important;}}
-.ueberschrift-gruen {h1,h2,h3,h4,h5,h6 {color: green !important;}}
-.ueberschrift-braun {h1,h2,h3,h4,h5,h6 {color: brown !important;}}
-.ueberschrift-schwarz {h1,h2,h3,h4,h5,h6 {color: black !important;}}
-.ueberschrift-grau {h1,h2,h3,h4,h5,h6 {color: grey !important;}}
-.ueberschrift-pink {h1,h2,h3,h4,h5,h6 {color: pink !important;}}
-.ueberschrift-violett {h1,h2,h3,h4,h5,h6 {color: violet !important;}}
-.ueberschrift-cyan {h1,h2,h3,h4,h5,h6 {color: cyan !important;}}
+.cbsd-text-shadow, .cbsd-text-shadow p {text-shadow: 1px 0 3px #333;}
+.cbsd-text-bold, .cbsd-text-bold p {font-weight:bold !important;}
+.cbsd-text-underline, .cbsd-text-underline p {text-decoration: underline !important;}
+.cbsd-text-uppercase, .cbsd-text-uppercase p {text-transform: uppercase !important;}
 
-.ueberschrift-schatten {h1,h2,h3,h4,h5,h6 {text-shadow: 1px 0 3px #333;}}
-.ueberschrift-breit {h1,h2,h3,h4,h5,h6 {font-weight:bold !important;}}
-.ueberschrift-unterstrichen {h1,h2,h3,h4,h5,h6 { text-decoration: underline !important;}}
-.ueberschrift-uppercase {h1,h2,h3,h4,h5,h6 {text-transform: uppercase !important;}}
-*/
+/* headline classes */
+.cbsd-hl-white h1,.cbsd-hl-white h2,.cbsd-hl-white h3,.cbsd-hl-white h4,.cbsd-hl-white h5,.cbsd-hl-white h6 {color: #ffffff !important;}
+.cbsd-hl-red h1,.cbsd-hl-red h2,.cbsd-hl-red h3,.cbsd-hl-red h4,.cbsd-hl-red h5,.cbsd-hl-red h6 {color: red !important;}
+.cbsd-hl-yellow h1,.cbsd-hl-yellow h2,.cbsd-hl-yellow h3,.cbsd-hl-yellow h4,.cbsd-hl-yellow h5,.cbsd-hl-yellow h6 {color: yellow !important;}
+.cbsd-hl-blue h1,.cbsd-hl-blue h2,.cbsd-hl-blue h3,.cbsd-hl-blue h4,.cbsd-hl-blue h5,.cbsd-hl-blue h6 {color: blue !important;}
+.cbsd-hl-orange h1,.cbsd-hl-orange h2,.cbsd-hl-orange h3,.cbsd-hl-orange h4,.cbsd-hl-orange h5,.cbsd-hl-orange h6 {color: orange !important;}
+.cbsd-hl-green h1,.cbsd-hl-green h2,.cbsd-hl-green h3,.cbsd-hl-green h4,.cbsd-hl-green h5,.cbsd-hl-green h6 {color: green !important;}
+.cbsd-hl-brown h1,.cbsd-hl-brown h2,.cbsd-hl-brown h3,.cbsd-hl-brown h4,.cbsd-hl-brown h5,.cbsd-hl-brown h6 {color: brown !important;}
+.cbsd-hl-black h1,.cbsd-hl-black h2,.cbsd-hl-black h3,.cbsd-hl-black h4,.cbsd-hl-black h5,.cbsd-hl-black h6 {color: black !important;}
+.cbsd-hl-grey h1,.cbsd-hl-grey h2,.cbsd-hl-grey h3,.cbsd-hl-grey h4,.cbsd-hl-grey h5,.cbsd-hl-grey h6 {color: grey !important;}
+.cbsd-hl-pink h1,.cbsd-hl-pink h2,.cbsd-hl-pink h3,.cbsd-hl-pink h4,.cbsd-hl-pink h5,.cbsd-hl-pink h6 {color: pink !important;}
+.cbsd-hl-violet h1,.cbsd-hl-violet h2,.cbsd-hl-violet h3,.cbsd-hl-violet h4,.cbsd-hl-violet h5,.cbsd-hl-violet h6 {color: violet !important;}
+.cbsd-hl-cyan h1,.cbsd-hl-cyan h2,.cbsd-hl-cyan h3,.cbsd-hl-cyan h4,.cbsd-hl-cyan h5,.cbsd-hl-cyan h6 {color: cyan !important;}
+
+.cbsd-hl-schatten h1,.cbsd-hl-schatten h2,.cbsd-hl-schatten h3,.cbsd-hl-schatten h4,.cbsd-hl-schatten h5,.cbsd-hl-schatten h6 {text-shadow: 1px 0 3px #333;}
+.cbsd-hl-breit h1,.cbsd-hl-breit h2,.cbsd-hl-breit h3,.cbsd-hl-breit h4,.cbsd-hl-breit h5,.cbsd-hl-breit h6 {font-weight:bold !important;}
+.cbsd-hl-unterstrichen h1,.cbsd-hl-unterstrichen h2,.cbsd-hl-unterstrichen h3,.cbsd-hl-unterstrichen h4,.cbsd-hl-unterstrichen h5,.cbsd-hl-unterstrichen h6 { text-decoration: underline !important;}
+.cbsd-hl-uppercase h1,.cbsd-hl-uppercase h2,.cbsd-hl-uppercase h3,.cbsd-hl-uppercase h4,.cbsd-hl-uppercase h5,.cbsd-hl-uppercase h6 {text-transform: uppercase !important;}
 
 
 /* link classes */
-.link-weiss a {color: #ffffff !important;}
-.link-rot a {color: red !important;}
-.link-gelb a {color: yellow !important;}
-.link-blau a {color: blue !important;}
-.link-orange a {color: orange !important;}
-.link-gruen a {color: green !important;}
-.link-braun a {color: brown !important;}
-.link-schwarz a {color: black !important;}
-.link-grau a {color: grey !important;}
-.link-pink a {color: pink !important;}
-.link-violett a {color: violet !important;}
-.link-cyan a {color: cyan !important;}
 
-.link-schatten a {text-shadow: 1px 0 3px #333;}
-.link-breit a {font-weight:bold !important;}
-.link-unterstrichen  a {text-decoration: underline !important;}
-.link-uppercase a {text-transform: uppercase !important;}
+.cbsd-link-white a {color: #ffffff !important;}
+.cbsd-link-red a {color: red !important;}
+.cbsd-link-yellow a {color: yellow !important;}
+.cbsd-link-blue a {color: blue !important;}
+.cbsd-link-orange a {color: orange !important;}
+.cbsd-link-green a {color: green !important;}
+.cbsd-link-brown a {color: brown !important;}
+.cbsd-link-black a {color: black !important;}
+.cbsd-link-grey a {color: grey !important;}
+.cbsd-link-pink a {color: pink !important;}
+.cbsd-link-violet a {color: violet !important;}
+.cbsd-link-cyan a {color: cyan !important;}
+
+.cbsd-link-shadow a {text-shadow: 1px 0 3px #333;}
+.cbsd-link-bold a {font-weight:bold !important;}
+.cbsd-link-underline a {text-decoration: underline !important;}
+.cbsd-link-uppercase a {text-transform: uppercase !important;}
 
 /* background classes */
-.hintergrund-rot {background-color: red !important;}
-.hintergrund-gelb {background-color: yellow !important;}
-.hintergrund-blau {background-color: blue !important;}
-.hintergrund-orange {background-color: orange !important;}
-.hintergrund-gruen {background-color: green !important;}
-.hintergrund-braun {background-color: brown !important;}
-.hintergrund-schwarz {background-color: black !important;}
-.hintergrund-weiss {background-color: white !important;}
-.hintergrund-grau {background-color: grey !important;}
-.hintergrund-pink {background-color: pink !important;}
-.hintergrund-violett {background-color: violet !important;}
-.hintergrund-cyan {background-color: cyan !important;}
+.cbsd-bg-red {background-color: red !important;}
+.cbsd-bg-yellow {background-color: yellow !important;}
+.cbsd-bg-blue {background-color: blue !important;}
+.cbsd-bg-orange {background-color: orange !important;}
+.cbsd-bg-green {background-color: green !important;}
+.cbsd-bg-brown {background-color: brown !important;}
+.cbsd-bg-black {background-color: black !important;}
+.cbsd-bg-white {background-color: white !important;}
+.cbsd-bg-grey {background-color: grey !important;}
+.cbsd-bg-pink {background-color: pink !important;}
+.cbsd-bg-violet {background-color: violet !important;}
+.cbsd-bg-cyan {background-color: cyan !important;}
 
-.hintergrund-transparent, .hintergrund-transparent-transparent {background-color: transparent !important;}
-.hintergrund-transparent-rot {background-color: rgba(255,0,0,0.5) !important;}
-.hintergrund-transparent-gelb {background-color: rgba(255,255,0,0.5) !important;}
-.hintergrund-transparent-blau {background-color: rgba(0,0,255,0.5) !important;}
-.hintergrund-transparent-orange {background-color: rgba(255,128,0,0.5) !important;}
-.hintergrund-transparent-gruen {background-color: rgba(0,255,0,0.5) !important;}
-.hintergrund-transparent-braun {background-color: rgba(165,42,42,0.5) !important;}
-.hintergrund-transparent-schwarz {background-color: rgba(0,0,0,0.5) !important;}
-.hintergrund-transparent-weiss {background-color: rgba(255,255,255,0.5) !important;}
-.hintergrund-transparent-grau {background-color: rgba(180,180,180,0.5) !important;}
-.hintergrund-transparent-pink {background-color: rgba(255,192,203,0.5) !important;}
-.hintergrund-transparent-violett {background-color: rgba(238,130,238,0.5) !important;}
-.hintergrund-transparent-cyan {background-color: rgba(0,255,255,0.5) !important;}
-
-
+.cbsd-bg-transparent, .cbsd-bg-transparent-transparent {background-color: transparent !important;}
+.cbsd-bg-transparent-red {background-color: rgba(255,0,0,0.5) !important;}
+.cbsd-bg-transparent-yellow {background-color: rgba(255,255,0,0.5) !important;}
+.cbsd-bg-transparent-blue {background-color: rgba(0,0,255,0.5) !important;}
+.cbsd-bg-transparent-orange {background-color: rgba(255,128,0,0.5) !important;}
+.cbsd-bg-transparent-green {background-color: rgba(0,255,0,0.5) !important;}
+.cbsd-bg-transparent-brown {background-color: rgba(165,42,42,0.5) !important;}
+.cbsd-bg-transparent-black {background-color: rgba(0,0,0,0.5) !important;}
+.cbsd-bg-transparent-white {background-color: rgba(255,255,255,0.5) !important;}
+.cbsd-bg-transparent-grey {background-color: rgba(180,180,180,0.5) !important;}
+.cbsd-bg-transparent-pink {background-color: rgba(255,192,203,0.5) !important;}
+.cbsd-bg-transparent-violet {background-color: rgba(238,130,238,0.5) !important;}
+.cbsd-bg-transparent-cyan {background-color: rgba(0,255,255,0.5) !important;}
 
 
 /* media responsive classes */
@@ -133,9 +133,5 @@
   max-width: initial;
   height: initial;
 }
-
-
-
-
 
 
