@@ -1,5 +1,6 @@
 {
     "name": "sarahsolus/contaobsdesigner",
+    "version": "1.0.0",
     "description": "Contao 4 Bootstrap Designer Bundle",
     "license": "LGPL-3.0-or-later",
     "type": "contao-bundle",
@@ -9,7 +10,7 @@
             "homepage": "https://github.com/leofeyer"
         },
         {
-            "name": "Contao Community",
+            "name": "Thomas Richter",
             "homepage": "https://contao.org/contributors"
         }
     ],
@@ -28,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Contao\\ContaobsdesignerBundle\\": "src/"
+            "Sarahsolus\\ContaobsdesignerBundle\\": "src/"
         }
     },
     "config": {
@@ -38,6 +39,6 @@
         }
     },
     "extra": {
-        "contao-manager-plugin": "Contao\\ContaobsdesignerBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Sarahsolus\\ContaobsdesignerBundle\\ContaoManager\\Plugin"
     },
 }

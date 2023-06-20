@@ -10,13 +10,13 @@ declare(strict_types=1);
  * @license LGPL-3.0-or-later
  */
 
-namespace Contao\ContaobsdesignerBundle\ContaoManager;
+namespace Sarahsolus\ContaobsdesignerBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Contao\ContaobsdesignerBundle\ContaobsdesignerBundle;
+use Sarahsolus\ContaobsdesignerBundle\ContaobsdesignerBundle;
 
 class Plugin implements BundlePluginInterface
 {
