@@ -10,10 +10,10 @@ declare(strict_types=1);
  * @license LGPL-3.0-or-later
  */
 
-namespace Sarahsolus\ContaobsdesignerBundle;
+namespace Sarahsolus\ContaoBsDesigner;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ContaobsdesignerBundle extends Bundle
+class ContaoBsDesignerBundle extends Bundle
 {
 }

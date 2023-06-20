@@ -29,7 +29,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Sarahsolus\\ContaobsdesignerBundle\\": "src/"
+            "Sarahsolus\\ContaoBSDesigner\\": "src/"
         }
     },
     "config": {
@@ -39,6 +39,6 @@
         }
     },
     "extra": {
-        "contao-manager-plugin": "Sarahsolus\\ContaobsdesignerBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Sarahsolus\\ContaoBSDesigner\\ContaoManager\\Plugin"
     }
 }
