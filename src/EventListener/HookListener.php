@@ -97,14 +97,12 @@ class HookListener
             }
         }
 
-        // parse the initial HTML tag
         $buffer = \preg_replace_callback(
             '|<([a-zA-Z0-9]+)(\s[^>]*?)?(?<!/)>|',
             function ($matches) use ($classes) {
                 $tag = $matches[1];
                 $attributes = $matches[2];
 
-                // add the CSS classes
                 $attributes = preg_replace('/class="([^"]+)"/', 'class="$1 '.$classes.'"', $attributes, 1, $count);
                 if (0 === $count) {
                     $attributes .= ' class="'.$classes.'"';
@@ -117,4 +115,26 @@ class HookListener
 
         return $buffer;
     }
+
+    public function parseTemplate($objTemplate)
+    {
+        if ($objTemplate->getName() == 'mod_article') {
+            $temp_obj = $objTemplate->getData();
+
+            if (!empty($temp_obj['cbsd_article_container'])) {
+                $class_obj= '';
+                if ($temp_obj['cbsd_article_container'] == 'container') {
+                    $class_obj= 'container cbsd-container';
+                } elseif ($temp_obj['cbsd_article_container'] == 'container-fluid') {
+                    $class_obj= 'container-fluid cbsd-container-fluid';
+                }
+                array_unshift($temp_obj['elements'],'<div class="'.$class_obj.'">');
+                $temp_obj['elements'][] = '</div>';
+                $objTemplate->setData($temp_obj);
+            }
+        }
+    }
+
+
+
 }

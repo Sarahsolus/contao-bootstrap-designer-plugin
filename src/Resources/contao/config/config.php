@@ -244,6 +244,8 @@ use Sarahsolus\ContaoBsDesigner\EventListener\HookListener;
 
 $GLOBALS['TL_HOOKS']['getContentElement'][] = [HookListener::class, 'onGetContentElement'];
 $GLOBALS['TL_HOOKS']['parseWidget'][] = [HookListener::class, 'onParseWidget'];
+$GLOBALS['TL_HOOKS']['parseTemplate'][] = [HookListener::class, 'parseTemplate'];
+
 
 if (defined('TL_MODE') && TL_MODE === 'FE') {
     $GLOBALS['TL_CSS'][] = 'bundles/contaobsdesigner/css/contaobsdesigner.css|static';
