@@ -29,7 +29,28 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['cbsd_settings_container'] = [
         'exclude' => true,
         'maxlength' => 255,
         'includeBlankOption' => true,
-        'tl_class'=>'w50',
+        'tl_class'=>'w50 clr',
+        'chosen' => true
+    ],
+    'sql' => "varchar(255) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['cbsd_settings_responsive'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['cbsd_settings_responsive'],
+    'exclude' => true,
+    'inputType' => 'select',
+    'options' => [
+        'standard' => 'Standard',
+        'always-responsive' => 'Immer aufspannen',
+        'always-responsive-desktop' => 'Bis Desktop aufspannen',
+        'always-responsive-tablet' => 'Bis Tablet aufspannen',
+        'no-responsive' => 'Nicht responsive'
+    ],
+    'eval' => [
+        'exclude' => true,
+        'maxlength' => 255,
+        'includeBlankOption' => true,
+        'tl_class'=>'w50 clr',
         'chosen' => true
     ],
     'sql' => "varchar(255) NOT NULL default ''"

@@ -108,23 +108,28 @@
 
 .always-responsive img, .always-responsive video {
     width: 100%;
+    height: auto;
 }
 
 .always-responsive-tablet img, .always-responsive-tablet video {
     width: 100%;
+    height: auto;
 }
 @media (min-width: 992px) {
   .always-responsive-tablet img, .always-responsive-tablet video {
     width: initial;
+    max-width: 100%;
   }
 }
 
 .always-responsive-desktop img, .always-responsive-desktop video {
   width: 100%;
+  height: auto;
 }
 @media (min-width: 1200px) {
   .always-responsive-desktop img, .always-responsive-desktop video {
     width: initial;
+    max-width: 100%;
   }
 }
 
