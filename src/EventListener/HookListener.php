@@ -24,13 +24,13 @@ class HookListener
      */
     private function processBuffer(string $buffer, $object): string
     {
-        if (TL_MODE === 'BE' || (!$object->content_margin && !$object->content_display)) {
+        if (TL_MODE === 'BE' || (!$object->content_margin && !$object->content_padding && !$object->content_display && !$object->content_color)) {
             return $buffer;
         }
 
         $classes = '';
 
-        // Content Margin & Padding
+        // Content Margin
         if ($object->content_margin) {
             $content_margin = unserialize($object->content_margin,['']);
             foreach ($content_margin as $content_margin_row) {
@@ -40,6 +40,20 @@ class HookListener
                         $classes.= $content_margin_row['content_margin_viewport'].'-';
                     }
                     $classes.= $content_margin_row['content_margin_value'].' ';
+                }
+            }
+        }
+
+        // Content Padding
+        if ($object->content_padding) {
+            $content_padding = unserialize($object->content_padding,['']);
+            foreach ($content_padding as $content_padding_row) {
+                if ($content_padding_row['content_padding_type'] && ($content_padding_row['content_padding_value'] || $content_padding_row['content_padding_value']==0) ) {
+                    $classes.= $content_padding_row['content_padding_type'].'-';
+                    if ($content_padding_row['content_padding_viewport']) {
+                        $classes.= $content_padding_row['content_padding_viewport'].'-';
+                    }
+                    $classes.= $content_padding_row['content_padding_value'].' ';
                 }
             }
         }

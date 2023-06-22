@@ -14,10 +14,16 @@
 $strName = 'tl_content';
 
 $GLOBALS['TL_LANG']['tl_content']['content_design_legend'] = 'Design';
-$GLOBALS['TL_LANG']['tl_content']['content_margin'] = ['Abstand','Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen'];
-$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_type'] = ['Art des Abstands',''];
+
+$GLOBALS['TL_LANG']['tl_content']['content_margin'] = ['Außenabstand','Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen'];
+$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_type'] = ['Art des Außenabstands',''];
 $GLOBALS['TL_LANG'][$strName]['fields']['content_margin_viewport'] = ['Displaygröße',''];
 $GLOBALS['TL_LANG'][$strName]['fields']['content_margin_value'] = ['Wert',''];
+
+$GLOBALS['TL_LANG']['tl_content']['content_padding'] = ['Innenabstand','Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen'];
+$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_type'] = ['Art des Innenabstands',''];
+$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_viewport'] = ['Displaygröße',''];
+$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_value'] = ['Wert',''];
 
 $GLOBALS['TL_LANG']['tl_content']['content_display'] = ['Darstellung','Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen'];
 $GLOBALS['TL_LANG'][$strName]['fields']['content_display_type'] = ['Art der Darstellung',''];

@@ -16,73 +16,6 @@ use Contao\DataContainer;
 
 $strName = 'tl_content';
 
-$GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
-    'inputType' => 'multiColumnWizard',
-    'exclude' => true,
-    'eval' => [
-        'tl_class'=>'w50 clr',
-        'columnFields' => [
-            'content_margin_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_type'],
-                'exclude' => true,
-                'inputType' => 'select',
-                'options' => [
-                    'mt' => 'Außenabstand oben (mt)',
-                    'mr' => 'Außenabstand rechts (mr)',
-                    'mb' => 'Außenabstand unten (mb)',
-                    'ml' => 'Außenabstand links (ml)',
-                    'm' => 'Außenabstand allseitig (m)',
-                    'pt' => 'Innenabstand oben (pt)',
-                    'pr' => 'Innenabstand rechts (pr)',
-                    'pb' => 'Innenabstand unten (pb)',
-                    'pl' => 'Innenabstand links (pl)',
-                    'p' => 'Innenabstand allseitig (p)'
-                ],
-                'eval' => [
-                    'exclude' => true,
-                    'style' => 'width:230px',
-                    'maxlength' => 255,
-                    'includeBlankOption' => true,
-                    'chosen' => true
-                ],
-            ],
-            'content_margin_viewport' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_viewport'],
-                'exclude' => true,
-                'inputType' => 'select',
-                'options' => [
-                    'sm' => 'sm (Handy)',
-                    'md' => 'md (Tablet)',
-                    'lg'  => 'lg (Monitor)',
-                    'xl'  => 'xl (Monitor HD)'
-                    ],
-                'eval' => [
-                    'exclude' => true,
-                    'style' => 'width:140px',
-                    'maxlength' => 255,
-                    'includeBlankOption' => true,
-                    'chosen' => true
-                ],
-            ],
-            'content_margin_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_value'],
-                'exclude' => true,
-                'inputType' => 'select',
-                'options' => ['0','1', '2', '3', '4', '5', 'auto', 's1', 's2', 's3'],
-                'eval' => [
-                    'exclude' => true,
-                    'style' => 'width:80px',
-                    'maxlength' => 255,
-                    'includeBlankOption' => true,
-                    'chosen' => true
-                ],
-            ],
-        ],
-        'disableSorting' => true,
-    ],
-    'sql' => "blob NULL",
-];
-
 $GLOBALS['TL_DCA'][$strName]['fields']['content_display'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
@@ -136,7 +69,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
-        'tl_class'=>'w50 m12',
+        'tl_class'=>'w50',
         'hideButtons'=>true,
         'columnFields' => [
             'content_bgcolor_type' => [
@@ -205,11 +138,136 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
 ];
 
 
+$GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
+    'inputType' => 'multiColumnWizard',
+    'exclude' => true,
+    'eval' => [
+        'tl_class'=>'w50 clr',
+        'columnFields' => [
+            'content_margin_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_type'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => [
+                    'mt' => 'Außenabstand oben (mt)',
+                    'mr' => 'Außenabstand rechts (mr)',
+                    'mb' => 'Außenabstand unten (mb)',
+                    'ml' => 'Außenabstand links (ml)',
+                    'm' => 'Außenabstand allseitig (m)',
+                ],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:230px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+            'content_margin_viewport' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_viewport'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => [
+                    'sm' => 'sm (Handy)',
+                    'md' => 'md (Tablet)',
+                    'lg'  => 'lg (Monitor)',
+                    'xl'  => 'xl (Monitor HD)'
+                ],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:140px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+            'content_margin_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_value'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => ['0','1', '2', '3', '4', '5', 'auto', 's1', 's2', 's3'],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:80px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+        ],
+        'disableSorting' => true,
+    ],
+    'sql' => "blob NULL",
+];
+
+$GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
+    'inputType' => 'multiColumnWizard',
+    'exclude' => true,
+    'eval' => [
+        'tl_class'=>'w50',
+        'columnFields' => [
+            'content_padding_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_type'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => [
+                    'pt' => 'Innenabstand oben (pt)',
+                    'pr' => 'Innenabstand rechts (pr)',
+                    'pb' => 'Innenabstand unten (pb)',
+                    'pl' => 'Innenabstand links (pl)',
+                    'p' => 'Innenabstand allseitig (p)'
+                ],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:230px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+            'content_padding_viewport' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_viewport'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => [
+                    'sm' => 'sm (Handy)',
+                    'md' => 'md (Tablet)',
+                    'lg'  => 'lg (Monitor)',
+                    'xl'  => 'xl (Monitor HD)'
+                ],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:140px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+            'content_padding_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_value'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => ['0','1', '2', '3', '4', '5', 's1', 's2', 's3'],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:80px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+        ],
+        'disableSorting' => true,
+    ],
+    'sql' => "blob NULL",
+];
+
+
 $GLOBALS['TL_DCA'][$strName]['fields']['content_color'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
-        'tl_class'=>'w50 m12',
+        'tl_class'=>'w50 clr',
         'columnFields' => [
             'content_color_type' => [
                 'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_color_type'],
@@ -301,9 +359,10 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
         if (\is_string($palette)) {
             PaletteManipulator::create()
                 ->addLegend('content_design_legend', 'expert_legend', PaletteManipulator::POSITION_BEFORE, true)
-                ->addField('content_margin', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('content_display', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('content_bgcolor', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('content_margin', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('content_padding', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('content_color', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->applyToPalette($key, $dc->table)
             ;
