@@ -16,21 +16,6 @@ use Contao\DataContainer;
 
 $strName = 'tl_content';
 
-// $GLOBALS['TL_DCA'][$strName]['palettes']['default'] = '{type_legend},type,content_margin';
-
-// $GLOBALS['TL_DCA'][$strName]['subpalettes']['content_margin'] = 'content_margin_all';
-
-/*
-$GLOBALS['TL_DCA'][$strName]['fields']['content_margin_all'] = [
-    'label'                 => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_all'],
-    'exclude'               => true,
-    'inputType'             => 'select',
-    'options'               => ['1', '2', '3', '4', '5'],
-    'eval'                  => ['maxlength'=>255, 'includeBlankOption'=>true, 'multiple'=>false, 'chosen'=>true],
-    'sql'                   => "varchar(255) NOT NULL default ''"
-];
-*/
-
 $GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
@@ -338,5 +323,11 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
     PaletteManipulator::create()
         ->addField('content_image_responsive', 'playerSize')
         ->applyToPalette('player', 'tl_content');
+
+    if (!empty($GLOBALS['TL_CONFIG']['cbsd_settings_responsive'])) {
+        if ($GLOBALS['TL_DCA']['tl_content']['fields']['content_image_responsive']['default'] != $GLOBALS['TL_CONFIG']['cbsd_settings_responsive']) {
+            $GLOBALS['TL_DCA']['tl_content']['fields']['content_image_responsive']['default'] = $GLOBALS['TL_CONFIG']['cbsd_settings_responsive'];
+        }
+    }
 
 };

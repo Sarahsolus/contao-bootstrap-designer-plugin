@@ -39,8 +39,17 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container'] = [
     'sql' => "varchar(255) NOT NULL default ''"
 ];
 
-if ($GLOBALS['TL_CONFIG']['cbsd_settings_container']=='container' && $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container']['default'] != 'container') {
-    $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container']['default'] = 'container';
-} elseif ($GLOBALS['TL_CONFIG']['cbsd_settings_container']=='container-fluid' && $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container']['default'] != 'container-fluid') {
-    $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container']['default'] = 'container-fluid';
+$GLOBALS['TL_DCA']['tl_article']['config']['onload_callback'] = [['cbsd_tl_article', 'checkDefaultArticleContainer']];
+
+class cbsd_tl_article extends tl_article
+{
+    public function checkDefaultArticleContainer(DataContainer $dc = null): void
+    {
+        if (!empty($GLOBALS['TL_CONFIG']['cbsd_settings_container'])) {
+            if ($GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container']['default'] != $GLOBALS['TL_CONFIG']['cbsd_settings_container']) {
+                $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container']['default'] = $GLOBALS['TL_CONFIG']['cbsd_settings_container'];
+            }
+        }
+        return;
+    }
 }

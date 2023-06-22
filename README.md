@@ -57,8 +57,7 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 ##To Do
 
 - Text farbe und Eigenschaft teilen
-- Default Responsive einfügen samt Logic
-- 
+- Translation
 
 
 

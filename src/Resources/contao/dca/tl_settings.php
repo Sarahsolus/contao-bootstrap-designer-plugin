@@ -13,6 +13,7 @@ use Contao\StringUtil;
 
 PaletteManipulator::create()
     ->addField(['cbsd_settings_container'], 'doNotCollapse', PaletteManipulator::POSITION_AFTER)
+    ->addField(['cbsd_settings_responsive'], 'cbsd_settings_container', PaletteManipulator::POSITION_AFTER)
     ->applyToPalette('default', 'tl_settings')
 ;
 
@@ -50,7 +51,7 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['cbsd_settings_responsive'] = [
         'exclude' => true,
         'maxlength' => 255,
         'includeBlankOption' => true,
-        'tl_class'=>'w50 clr',
+        'tl_class'=>'w50',
         'chosen' => true
     ],
     'sql' => "varchar(255) NOT NULL default ''"
