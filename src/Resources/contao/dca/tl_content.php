@@ -263,14 +263,14 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
 ];
 
 
-$GLOBALS['TL_DCA'][$strName]['fields']['content_color'] = [
+$GLOBALS['TL_DCA'][$strName]['fields']['content_text'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
         'tl_class'=>'w50 clr',
         'columnFields' => [
-            'content_color_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_color_type'],
+            'content_text_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_text_type'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => [
@@ -286,29 +286,20 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_color'] = [
                     'chosen' => true
                 ],
             ],
-            'content_color_property' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_color_property'],
+            'content_text_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_text_value'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => [
+                    'left' => 'Linksbündig',
+                    'center' => 'Zentriert',
+                    'right' => 'Rechtsbündig',
+                    'justify' => 'Ausgerichtet',
                     'shadow' => 'Schatten',
                     'underline' => 'Unterstrichen',
                     'bold' => 'Breit',
-                    'uppercase' => 'Hochgestellt'
-                ],
-                'eval' => [
-                    'exclude' => true,
-                    'style' => 'width:120px',
-                    'maxlength' => 255,
-                    'includeBlankOption' => true,
-                    'chosen' => true
-                ],
-            ],
-            'content_color_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_color_value'],
-                'exclude' => true,
-                'inputType' => 'select',
-                'options' => [
+                    'italic' => 'Kursiv',
+                    'uppercase' => 'Hochgestellt',
                     'brand-primary' => 'Brand-Primary',
                     'brand-secondary' => 'Brand-Secondary',
                     'background' => 'Hintergrund (Body)',
@@ -363,7 +354,7 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
                 ->addField('content_bgcolor', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('content_margin', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('content_padding', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
-                ->addField('content_color', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('content_text', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->applyToPalette($key, $dc->table)
             ;
         }

@@ -34,9 +34,8 @@ $GLOBALS['TL_LANG'][$strName]['fields']['content_bgcolor_type'] = ['Hintergrundf
 $GLOBALS['TL_LANG'][$strName]['fields']['content_bgcolor_property'] = ['Transparenz',''];
 $GLOBALS['TL_LANG'][$strName]['fields']['content_bgcolor_value'] = ['Farbe',''];
 
-$GLOBALS['TL_LANG']['tl_content']['content_color'] = ['Texteigenschaften','Texteigenschaften innerhalb des Elements'];
-$GLOBALS['TL_LANG'][$strName]['fields']['content_color_type'] = ['Texttyp',''];
-$GLOBALS['TL_LANG'][$strName]['fields']['content_color_property'] = ['Eigenschaft',''];
-$GLOBALS['TL_LANG'][$strName]['fields']['content_color_value'] = ['Farbe',''];
+$GLOBALS['TL_LANG']['tl_content']['content_text'] = ['Texteigenschaften','Texteigenschaften innerhalb des Elements'];
+$GLOBALS['TL_LANG'][$strName]['fields']['content_text_type'] = ['Texttyp',''];
+$GLOBALS['TL_LANG'][$strName]['fields']['content_text_value'] = ['Eigenschaften',''];
 
 $GLOBALS['TL_LANG'][$strName]['fields']['content_image_responsive'] = ['Responsive Darstellung',''];

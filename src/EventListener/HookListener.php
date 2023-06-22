@@ -86,19 +86,14 @@ class HookListener
             }
         }
 
-        // Content Color Text
-        if ($object->content_color) {
-            $content_color = unserialize($object->content_color,['']);
-            foreach ($content_color as $content_color_row) {
-
-                if ($content_color_row['content_color_type']) {
-                    if ($content_color_row['content_color_property']) {
-                        $classes.= $content_color_row['content_color_type'].'-';
-                        $classes.= $content_color_row['content_color_property'].' ';
-                    }
-                    if ($content_color_row['content_color_value']) {
-                        $classes.= $content_color_row['content_color_type'].'-';
-                        $classes.= $content_color_row['content_color_value'].' ';
+        // Content Text Propertys
+        if ($object->content_text) {
+            $content_text = unserialize($object->content_text,['']);
+            foreach ($content_text as $content_text_row) {
+                if ($content_text_row['content_text_type']) {
+                    if ($content_text_row['content_text_value']) {
+                        $classes.= $content_text_row['content_text_type'].'-';
+                        $classes.= $content_text_row['content_text_value'].' ';
                     }
                 }
             }

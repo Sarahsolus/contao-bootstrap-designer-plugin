@@ -32,8 +32,15 @@
 
 .cbsd-text-shadow, .cbsd-text-shadow p {text-shadow: 1px 0 3px #333;}
 .cbsd-text-bold, .cbsd-text-bold p {font-weight:bold !important;}
+.cbsd-text-italic, .cbsd-text-italic p {font-style: italic !important;}
 .cbsd-text-underline, .cbsd-text-underline p {text-decoration: underline !important;}
 .cbsd-text-uppercase, .cbsd-text-uppercase p {text-transform: uppercase !important;}
+
+.cbsd-text-left, .cbsd-text-left p {text-align: left; !important;}
+.cbsd-text-center, .cbsd-text-center p {text-align: center; !important;}
+.cbsd-text-right, .cbsd-text-right p {text-align: right; !important;}
+.cbsd-text-justify, .cbsd-text-justify p {text-align: justify !important;}
+
 
 /* headline classes */
 .cbsd-hl-white h1,.cbsd-hl-white h2,.cbsd-hl-white h3,.cbsd-hl-white h4,.cbsd-hl-white h5,.cbsd-hl-white h6 {color: #ffffff !important;}
@@ -49,10 +56,16 @@
 .cbsd-hl-violet h1,.cbsd-hl-violet h2,.cbsd-hl-violet h3,.cbsd-hl-violet h4,.cbsd-hl-violet h5,.cbsd-hl-violet h6 {color: violet !important;}
 .cbsd-hl-cyan h1,.cbsd-hl-cyan h2,.cbsd-hl-cyan h3,.cbsd-hl-cyan h4,.cbsd-hl-cyan h5,.cbsd-hl-cyan h6 {color: cyan !important;}
 
-.cbsd-hl-schatten h1,.cbsd-hl-schatten h2,.cbsd-hl-schatten h3,.cbsd-hl-schatten h4,.cbsd-hl-schatten h5,.cbsd-hl-schatten h6 {text-shadow: 1px 0 3px #333;}
-.cbsd-hl-breit h1,.cbsd-hl-breit h2,.cbsd-hl-breit h3,.cbsd-hl-breit h4,.cbsd-hl-breit h5,.cbsd-hl-breit h6 {font-weight:bold !important;}
-.cbsd-hl-unterstrichen h1,.cbsd-hl-unterstrichen h2,.cbsd-hl-unterstrichen h3,.cbsd-hl-unterstrichen h4,.cbsd-hl-unterstrichen h5,.cbsd-hl-unterstrichen h6 { text-decoration: underline !important;}
+.cbsd-hl-shadow h1,.cbsd-hl-shadow h2,.cbsd-hl-shadow h3,.cbsd-hl-shadow h4,.cbsd-hl-shadow h5,.cbsd-hl-shadow h6 {text-shadow: 1px 0 3px #333; !important;}
+.cbsd-hl-bold h1,.cbsd-hl-bold h2,.cbsd-hl-bold h3,.cbsd-hl-bold h4,.cbsd-hl-bold h5,.cbsd-hl-bold h6 {font-weight:bold !important;}
+.cbsd-hl-italic h1,.cbsd-hl-italic h2,.cbsd-hl-italic h3,.cbsd-hl-italic h4,.cbsd-hl-italic h5,.cbsd-hl-italic h6 {font-style: italic !important;}
+.cbsd-hl-underline h1,.cbsd-hl-underline h2,.cbsd-hl-underline h3,.cbsd-hl-underline h4,.cbsd-hl-underline h5,.cbsd-hl-underline h6 { text-decoration: underline !important;}
 .cbsd-hl-uppercase h1,.cbsd-hl-uppercase h2,.cbsd-hl-uppercase h3,.cbsd-hl-uppercase h4,.cbsd-hl-uppercase h5,.cbsd-hl-uppercase h6 {text-transform: uppercase !important;}
+
+.cbsd-hl-left h1,.cbsd-hl-left h2,.cbsd-hl-left h3,.cbsd-hl-left h4,.cbsd-hl-left h5,.cbsd-hl-left h6 {text-align: left; !important;}
+.cbsd-hl-center h1,.cbsd-hl-center h2,.cbsd-hl-center h3,.cbsd-hl-center h4,.cbsd-hl-center h5,.cbsd-hl-center h6 {text-align: center; !important;}
+.cbsd-hl-right h1,.cbsd-hl-right h2,.cbsd-hl-right h3,.cbsd-hl-right h4,.cbsd-hl-right h5,.cbsd-hl-right h6 {text-align: right; !important;}
+.cbsd-hl-justify h1,.cbsd-hl-justify h2,.cbsd-hl-justify h3,.cbsd-hl-justify h4,.cbsd-hl-justify h5,.cbsd-hl-justify h6 {text-align: justify !important;}
 
 
 /* link classes */
@@ -72,8 +85,15 @@
 
 .cbsd-link-shadow a {text-shadow: 1px 0 3px #333;}
 .cbsd-link-bold a {font-weight:bold !important;}
+.cbsd-link-italic a {font-style: italic !important;}
 .cbsd-link-underline a {text-decoration: underline !important;}
 .cbsd-link-uppercase a {text-transform: uppercase !important;}
+
+.cbsd-link-left a {text-align: left; !important;}
+.cbsd-link-center a {text-align: center; !important;}
+.cbsd-link-right a {text-align: right; !important;}
+.cbsd-link-justify a {text-align: justify !important;}
+
 
 /* background classes */
 .cbsd-bg-red {background-color: red !important;}
