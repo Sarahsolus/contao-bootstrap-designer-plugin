@@ -24,85 +24,85 @@ class HookListener
      */
     private function processBuffer(string $buffer, $object): string
     {
-        if (TL_MODE === 'BE' || (!$object->content_margin && !$object->content_padding && !$object->content_display && !$object->content_color)) {
+        if (TL_MODE === 'BE' || (!$object->cbsd_margin && !$object->cbsd_padding && !$object->cbsd_display && !$object->cbsd_color)) {
             return $buffer;
         }
 
         $classes = '';
 
         // Content Margin
-        if ($object->content_margin) {
-            $content_margin = unserialize($object->content_margin,['']);
-            foreach ($content_margin as $content_margin_row) {
-                if ($content_margin_row['content_margin_type'] && ($content_margin_row['content_margin_value'] || $content_margin_row['content_margin_value']==0) ) {
-                    $classes.= $content_margin_row['content_margin_type'].'-';
-                    if ($content_margin_row['content_margin_viewport']) {
-                        $classes.= $content_margin_row['content_margin_viewport'].'-';
+        if ($object->cbsd_margin) {
+            $cbsd_margin = unserialize($object->cbsd_margin,['']);
+            foreach ($cbsd_margin as $cbsd_margin_row) {
+                if ($cbsd_margin_row['cbsd_margin_type'] && ($cbsd_margin_row['cbsd_margin_value'] || $cbsd_margin_row['cbsd_margin_value']==0) ) {
+                    $classes.= $cbsd_margin_row['cbsd_margin_type'].'-';
+                    if ($cbsd_margin_row['cbsd_margin_viewport']) {
+                        $classes.= $cbsd_margin_row['cbsd_margin_viewport'].'-';
                     }
-                    $classes.= $content_margin_row['content_margin_value'].' ';
+                    $classes.= $cbsd_margin_row['cbsd_margin_value'].' ';
                 }
             }
         }
 
         // Content Padding
-        if ($object->content_padding) {
-            $content_padding = unserialize($object->content_padding,['']);
-            foreach ($content_padding as $content_padding_row) {
-                if ($content_padding_row['content_padding_type'] && ($content_padding_row['content_padding_value'] || $content_padding_row['content_padding_value']==0) ) {
-                    $classes.= $content_padding_row['content_padding_type'].'-';
-                    if ($content_padding_row['content_padding_viewport']) {
-                        $classes.= $content_padding_row['content_padding_viewport'].'-';
+        if ($object->cbsd_padding) {
+            $cbsd_padding = unserialize($object->cbsd_padding,['']);
+            foreach ($cbsd_padding as $cbsd_padding_row) {
+                if ($cbsd_padding_row['cbsd_padding_type'] && ($cbsd_padding_row['cbsd_padding_value'] || $cbsd_padding_row['cbsd_padding_value']==0) ) {
+                    $classes.= $cbsd_padding_row['cbsd_padding_type'].'-';
+                    if ($cbsd_padding_row['cbsd_padding_viewport']) {
+                        $classes.= $cbsd_padding_row['cbsd_padding_viewport'].'-';
                     }
-                    $classes.= $content_padding_row['content_padding_value'].' ';
+                    $classes.= $cbsd_padding_row['cbsd_padding_value'].' ';
                 }
             }
         }
 
         // Contao Display
-        if ($object->content_display) {
-            $content_display = unserialize($object->content_display,['']);
-            foreach ($content_display as $content_display_row) {
-                if ($content_display_row['content_display_type']) {
+        if ($object->cbsd_display) {
+            $cbsd_display = unserialize($object->cbsd_display,['']);
+            foreach ($cbsd_display as $cbsd_display_row) {
+                if ($cbsd_display_row['cbsd_display_type']) {
                     $classes .= 'd-';
-                    if ($content_display_row['content_display_viewport']) {
-                        $classes.= $content_display_row['content_display_viewport'].'-';
+                    if ($cbsd_display_row['cbsd_display_viewport']) {
+                        $classes.= $cbsd_display_row['cbsd_display_viewport'].'-';
                     }
-                    $classes .= $content_display_row['content_display_type'].' ';
+                    $classes .= $cbsd_display_row['cbsd_display_type'].' ';
                 }
             }
         }
 
         // Content Color Background
-        if ($object->content_bgcolor) {
-            $content_bgcolor = unserialize($object->content_bgcolor,['']);
-            foreach ($content_bgcolor as $content_bgcolor_row) {
-                if ($content_bgcolor_row['content_bgcolor_type'] && $content_bgcolor_row['content_bgcolor_value']) {
-                    $classes.= $content_bgcolor_row['content_bgcolor_type'].'-';
-                    if ($content_bgcolor_row['content_bgcolor_property']) {
-                        $classes.= $content_bgcolor_row['content_bgcolor_property'].'-';
+        if ($object->cbsd_bgcolor) {
+            $cbsd_bgcolor = unserialize($object->cbsd_bgcolor,['']);
+            foreach ($cbsd_bgcolor as $cbsd_bgcolor_row) {
+                if ($cbsd_bgcolor_row['cbsd_bgcolor_type'] && $cbsd_bgcolor_row['cbsd_bgcolor_value']) {
+                    $classes.= $cbsd_bgcolor_row['cbsd_bgcolor_type'].'-';
+                    if ($cbsd_bgcolor_row['cbsd_bgcolor_property']) {
+                        $classes.= $cbsd_bgcolor_row['cbsd_bgcolor_property'].'-';
                     }
-                    $classes.= $content_bgcolor_row['content_bgcolor_value'].' ';
+                    $classes.= $cbsd_bgcolor_row['cbsd_bgcolor_value'].' ';
                 }
             }
         }
 
         // Content Text Propertys
-        if ($object->content_text) {
-            $content_text = unserialize($object->content_text,['']);
-            foreach ($content_text as $content_text_row) {
-                if ($content_text_row['content_text_type']) {
-                    if ($content_text_row['content_text_value']) {
-                        $classes.= $content_text_row['content_text_type'].'-';
-                        $classes.= $content_text_row['content_text_value'].' ';
+        if ($object->cbsd_text) {
+            $cbsd_text = unserialize($object->cbsd_text,['']);
+            foreach ($cbsd_text as $cbsd_text_row) {
+                if ($cbsd_text_row['cbsd_text_type']) {
+                    if ($cbsd_text_row['cbsd_text_value']) {
+                        $classes.= $cbsd_text_row['cbsd_text_type'].'-';
+                        $classes.= $cbsd_text_row['cbsd_text_value'].' ';
                     }
                 }
             }
         }
 
-        if ($object->content_image_responsive) {
-            $content_image_responsive = $object->content_image_responsive;
-            if ($content_image_responsive != 'standard') {
-                $classes.= $content_image_responsive;
+        if ($object->cbsd_image_responsive) {
+            $cbsd_image_responsive = $object->cbsd_image_responsive;
+            if ($cbsd_image_responsive != 'standard') {
+                $classes.= $cbsd_image_responsive;
             }
         }
 

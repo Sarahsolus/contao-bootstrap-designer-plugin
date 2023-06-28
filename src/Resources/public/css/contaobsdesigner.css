@@ -14,6 +14,22 @@
 .cbsd-hl-brand-primary h1,.cbsd-hl-brand-primary h2,.cbsd-hl-brand-primary h3,.cbsd-hl-brand-primary h4,.cbsd-hl-brand-primary h5,.cbsd-hl-brand-primary h6 {}
 .cbsd-hl-brand-secondary h1,.cbsd-hl-brand-secondary h2,.cbsd-hl-brand-secondary h3,.cbsd-hl-brand-secondary h4,.cbsd-hl-brand-secondary h5,.cbsd-hl-brand-secondary h6 {}
 
+/* element classes */
+
+.cbsd-element-border {
+    border:1px solid black;
+}
+
+.cbsd-element-rounded {
+    border-radius: 1rem;
+}
+
+.cbsd-element-shadow {
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+}
+
 
 /* text classes */
 

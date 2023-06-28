@@ -2,49 +2,49 @@
 <xliff version="1.1">
   <file datatype="php" original="tl_content.php" source-language="en">
     <body>
-      <trans-unit id="tl_content.content_design_legend">
+      <trans-unit id="tl_content.cbsd_design_legend">
         <source>Design</source>
       </trans-unit>
-      <trans-unit id="tl_content.content_margin.0">
+      <trans-unit id="tl_content.cbsd_margin.0">
         <source>Margin</source>
       </trans-unit>
-      <trans-unit id="tl_content.content_margin.1">
+      <trans-unit id="tl_content.cbsd_margin.1">
         <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
       </trans-unit>
-       <trans-unit id="tl_content.content_margin_type">
+       <trans-unit id="tl_content.cbsd_margin_type">
          <source>Margin type</source>
        </trans-unit>
-       <trans-unit id="tl_content.content_margin_viewport">
+       <trans-unit id="tl_content.cbsd_margin_viewport">
          <source>Viewport</source>
        </trans-unit>
-       <trans-unit id="tl_content.content_margin_value">
+       <trans-unit id="tl_content.cbsd_margin_value">
          <source>Value</source>
        </trans-unit>
-      <trans-unit id="tl_content.content_padding.0">
+      <trans-unit id="tl_content.cbsd_padding.0">
         <source>Padding</source>
       </trans-unit>
-      <trans-unit id="tl_content.content_padding.1">
+      <trans-unit id="tl_content.cbsd_padding.1">
         <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
       </trans-unit>
-       <trans-unit id="tl_content.content_padding_type">
+       <trans-unit id="tl_content.cbsd_padding_type">
          <source>Padding type</source>
        </trans-unit>
-       <trans-unit id="tl_content.content_padding_viewport">
+       <trans-unit id="tl_content.cbsd_padding_viewport">
          <source>Viewport</source>
        </trans-unit>
-       <trans-unit id="tl_content.content_padding_value">
+       <trans-unit id="tl_content.cbsd_padding_value">
          <source>Value</source>
        </trans-unit>
-      <trans-unit id="tl_content.content_display.0">
+      <trans-unit id="tl_content.cbsd_display.0">
         <source>Display</source>
       </trans-unit>
-      <trans-unit id="tl_content.content_display.1">
+      <trans-unit id="tl_content.cbsd_display.1">
         <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
       </trans-unit>
-       <trans-unit id="tl_content.content_display_type">
+       <trans-unit id="tl_content.cbsd_display_type">
          <source>Display type</source>
        </trans-unit>
-       <trans-unit id="tl_content.content_display_viewport">
+       <trans-unit id="tl_content.cbsd_display_viewport">
          <source>Viewport</source>
        </trans-unit>
       <trans-unit id="tl_content.none">
@@ -59,19 +59,19 @@
       <trans-unit id="tl_content.inline">
         <source>Inline</source>
       </trans-unit>
-      <trans-unit id="tl_content.content_bgcolor.0">
+      <trans-unit id="tl_content.cbsd_bgcolor.0">
         <source>Background Color</source>
       </trans-unit>
-      <trans-unit id="tl_content.content_bgcolor.1">
+      <trans-unit id="tl_content.cbsd_bgcolor.1">
         <source>Background color of element</source>
       </trans-unit>
       <trans-unit id="tl_content.cbsd-bg">
         <source>Background Color</source>
       </trans-unit>
-       <trans-unit id="tl_content.content_bgcolor_type">
+       <trans-unit id="tl_content.cbsd_bgcolor_type">
          <source>Background color</source>
        </trans-unit>
-       <trans-unit id="tl_content.content_bgcolor_property">
+       <trans-unit id="tl_content.cbsd_bgcolor_property">
          <source>Transparency</source>
        </trans-unit>
        <trans-unit id="tl_content.transparent">
@@ -80,25 +80,25 @@
        <trans-unit id="tl_content.opacity">
          <source>Transparent</source>
        </trans-unit>
-       <trans-unit id="tl_content.content_bgcolor_value">
+       <trans-unit id="tl_content.cbsd_bgcolor_value">
          <source>Color</source>
        </trans-unit>
-      <trans-unit id="tl_content.content_text.0">
+      <trans-unit id="tl_content.cbsd_text.0">
         <source>Texteigenschaften</source>
       </trans-unit>
-      <trans-unit id="tl_content.content_text.1">
+      <trans-unit id="tl_content.cbsd_text.1">
         <source>Texteigenschaften innerhalb des Elements</source>
       </trans-unit>
-       <trans-unit id="tl_content.content_text_type">
+       <trans-unit id="tl_content.cbsd_text_type">
          <source>Text type</source>
        </trans-unit>
-       <trans-unit id="tl_content.content_text_value">
+       <trans-unit id="tl_content.cbsd_text_value">
          <source>Property</source>
        </trans-unit>
-      <trans-unit id="tl_content.content_image_responsive.0">
+      <trans-unit id="tl_content.cbsd_image_responsive.0">
         <source>responsive display</source>
       </trans-unit>
-      <trans-unit id="tl_content.content_image_responsive.1">
+      <trans-unit id="tl_content.cbsd_image_responsive.1">
         <source></source>
       </trans-unit>
       <trans-unit id="tl_content.standard">

@@ -56,8 +56,8 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 
 ##To Do
 
-- content_bezeichner ändern in cbsd_
-- Translation
+- Element Eigenschaften Border, Rounded, Shadow
+- missing English Translation
 
 
 

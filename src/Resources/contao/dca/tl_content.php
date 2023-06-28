@@ -33,14 +33,14 @@ $text_type_options = ['cbsd-text','cbsd-link','cbsd-hl'];
 $image_responsive_options = ['standard','always-responsive','always-responsive-desktop','always-responsive-tablet','no-responsive'];
 
 
-$GLOBALS['TL_DCA'][$strName]['fields']['content_display'] = [
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_display'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
         'tl_class'=>'w50',
         'columnFields' => [
-            'content_display_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_display_type'],
+            'cbsd_display_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_display_type'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $display_type_options,
@@ -53,8 +53,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_display'] = [
                     'chosen' => true
                 ],
             ],
-            'content_display_viewport' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_display_viewport'],
+            'cbsd_display_viewport' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_display_viewport'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $display_viewport_options,
@@ -74,15 +74,15 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_display'] = [
 ];
 
 
-$GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_bgcolor'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
         'tl_class'=>'w50',
         'hideButtons'=>true,
         'columnFields' => [
-            'content_bgcolor_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_bgcolor_type'],
+            'cbsd_bgcolor_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_bgcolor_type'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => ['cbsd-bg'],
@@ -94,8 +94,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
                     'chosen' => true
                 ],
             ],
-            'content_bgcolor_property' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_bgcolor_property'],
+            'cbsd_bgcolor_property' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_bgcolor_property'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => ['opacity'],
@@ -108,8 +108,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
                     'chosen' => true
                 ],
             ],
-            'content_bgcolor_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_bgcolor_value'],
+            'cbsd_bgcolor_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_bgcolor_value'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $bgcolor_value_option,
@@ -129,14 +129,14 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
 ];
 
 
-$GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_margin'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
         'tl_class'=>'w50 clr',
         'columnFields' => [
-            'content_margin_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_margin_type'],
+            'cbsd_margin_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_margin_type'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $margin_type_options,
@@ -149,8 +149,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
                     'chosen' => true
                 ],
             ],
-            'content_margin_viewport' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_margin_viewport'],
+            'cbsd_margin_viewport' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_margin_viewport'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $display_viewport_options,
@@ -163,8 +163,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
                     'chosen' => true
                 ],
             ],
-            'content_margin_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_margin_value'],
+            'cbsd_margin_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_margin_value'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $margin_value_options,
@@ -182,14 +182,14 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
     'sql' => "blob NULL",
 ];
 
-$GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_padding'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
         'tl_class'=>'w50',
         'columnFields' => [
-            'content_padding_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_padding_type'],
+            'cbsd_padding_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_padding_type'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $padding_type_options,
@@ -202,8 +202,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
                     'chosen' => true
                 ],
             ],
-            'content_padding_viewport' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_padding_viewport'],
+            'cbsd_padding_viewport' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_padding_viewport'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $display_viewport_options,
@@ -216,8 +216,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
                     'chosen' => true
                 ],
             ],
-            'content_padding_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_padding_value'],
+            'cbsd_padding_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_padding_value'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $padding_value_options,
@@ -236,14 +236,14 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
 ];
 
 
-$GLOBALS['TL_DCA'][$strName]['fields']['content_text'] = [
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_text'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
         'tl_class'=>'w50 clr',
         'columnFields' => [
-            'content_text_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_text_type'],
+            'cbsd_text_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_text_type'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $text_type_options,
@@ -256,8 +256,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_text'] = [
                     'chosen' => true
                 ],
             ],
-            'content_text_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['content_text_value'],
+            'cbsd_text_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_text_value'],
                 'exclude' => true,
                 'inputType' => 'select',
                 'options' => $text_value_options,
@@ -276,8 +276,8 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_text'] = [
     'sql' => "blob NULL",
 ];
 
-$GLOBALS['TL_DCA'][$strName]['fields']['content_image_responsive'] = [
-    'label' => &$GLOBALS['TL_LANG'][$strName]['content_image_responsive'],
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_image_responsive'] = [
+    'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_image_responsive'],
     'exclude'               => true,
     'inputType'             => 'select',
     'options' => $image_responsive_options,
@@ -290,12 +290,12 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
     foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $key => $palette) {
         if (\is_string($palette)) {
             PaletteManipulator::create()
-                ->addLegend('content_design_legend', 'expert_legend', PaletteManipulator::POSITION_BEFORE, true)
-                ->addField('content_display', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
-                ->addField('content_bgcolor', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
-                ->addField('content_margin', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
-                ->addField('content_padding', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
-                ->addField('content_text', 'content_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addLegend('cbsd_design_legend', 'expert_legend', PaletteManipulator::POSITION_BEFORE, true)
+                ->addField('cbsd_display', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('cbsd_bgcolor', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('cbsd_margin', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('cbsd_padding', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('cbsd_text', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->applyToPalette($key, $dc->table)
             ;
         }
@@ -303,21 +303,21 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
 
     // Responsive Option
     PaletteManipulator::create()
-        ->addField('content_image_responsive', 'size')
+        ->addField('cbsd_image_responsive', 'size')
         ->applyToPalette('image', 'tl_content');
     PaletteManipulator::create()
-        ->addField('content_image_responsive', 'addImage')
+        ->addField('cbsd_image_responsive', 'addImage')
         ->applyToPalette('text', 'tl_content');
     PaletteManipulator::create()
-        ->addField('content_image_responsive', 'useImage')
+        ->addField('cbsd_image_responsive', 'useImage')
         ->applyToPalette('hyperlink', 'tl_content');
     PaletteManipulator::create()
-        ->addField('content_image_responsive', 'playerSize')
+        ->addField('cbsd_image_responsive', 'playerSize')
         ->applyToPalette('player', 'tl_content');
 
     if (!empty($GLOBALS['TL_CONFIG']['cbsd_settings_responsive'])) {
-        if ($GLOBALS['TL_DCA']['tl_content']['fields']['content_image_responsive']['default'] != $GLOBALS['TL_CONFIG']['cbsd_settings_responsive']) {
-            $GLOBALS['TL_DCA']['tl_content']['fields']['content_image_responsive']['default'] = $GLOBALS['TL_CONFIG']['cbsd_settings_responsive'];
+        if ($GLOBALS['TL_DCA']['tl_content']['fields']['cbsd_image_responsive']['default'] != $GLOBALS['TL_CONFIG']['cbsd_settings_responsive']) {
+            $GLOBALS['TL_DCA']['tl_content']['fields']['cbsd_image_responsive']['default'] = $GLOBALS['TL_CONFIG']['cbsd_settings_responsive'];
         }
     }
 
