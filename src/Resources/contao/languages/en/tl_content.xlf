@@ -47,17 +47,38 @@
        <trans-unit id="tl_content.content_display_viewport">
          <source>Viewport</source>
        </trans-unit>
+      <trans-unit id="tl_content.none">
+        <source>Hide (None)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.block">
+        <source>Block</source>
+      </trans-unit>
+      <trans-unit id="tl_content.inline-block">
+        <source>Inline-Block</source>
+      </trans-unit>
+      <trans-unit id="tl_content.inline">
+        <source>Inline</source>
+      </trans-unit>
       <trans-unit id="tl_content.content_bgcolor.0">
         <source>Background Color</source>
       </trans-unit>
       <trans-unit id="tl_content.content_bgcolor.1">
         <source>Background color of element</source>
       </trans-unit>
+      <trans-unit id="tl_content.cbsd-bg">
+        <source>Background Color</source>
+      </trans-unit>
        <trans-unit id="tl_content.content_bgcolor_type">
          <source>Background color</source>
        </trans-unit>
        <trans-unit id="tl_content.content_bgcolor_property">
          <source>Transparency</source>
+       </trans-unit>
+       <trans-unit id="tl_content.transparent">
+         <source>None (transparent)</source>
+       </trans-unit>
+       <trans-unit id="tl_content.opacity">
+         <source>Transparent</source>
        </trans-unit>
        <trans-unit id="tl_content.content_bgcolor_value">
          <source>Color</source>
@@ -74,8 +95,11 @@
        <trans-unit id="tl_content.content_text_value">
          <source>Property</source>
        </trans-unit>
-      <trans-unit id="tl_content.content_image_responsive">
+      <trans-unit id="tl_content.content_image_responsive.0">
         <source>responsive display</source>
+      </trans-unit>
+      <trans-unit id="tl_content.content_image_responsive.1">
+        <source></source>
       </trans-unit>
       <trans-unit id="tl_content.standard">
         <source>Standard</source>
@@ -91,6 +115,144 @@
       </trans-unit>
       <trans-unit id="tl_content.no-responsive">
         <source>Not responsive</source>
+      </trans-unit>
+      <trans-unit id="tl_content.sm">
+        <source>sm (Mobile)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.md">
+        <source>md (Tablet)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.lg">
+        <source>lg (Desktop)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.xl">
+        <source>xl (Desktop HD)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.xxl">
+        <source>xxl (Desktop UHD)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.left">
+        <source>Linksbündig</source>
+      </trans-unit>
+      <trans-unit id="tl_content.center">
+        <source>Centered</source>
+      </trans-unit>
+      <trans-unit id="tl_content.right">
+        <source>Rechtsbündig</source>
+      </trans-unit>
+      <trans-unit id="tl_content.justify">
+        <source>Justified</source>
+      </trans-unit>
+      <trans-unit id="tl_content.shadow">
+        <source>Shadow</source>
+      </trans-unit>
+      <trans-unit id="tl_content.underline">
+        <source>Underlined</source>
+      </trans-unit>
+      <trans-unit id="tl_content.bold">
+        <source>Bold</source>
+      </trans-unit>
+      <trans-unit id="tl_content.italic">
+        <source>Italic</source>
+      </trans-unit>
+      <trans-unit id="tl_content.uppercase">
+        <source>Uppercase</source>
+      </trans-unit>
+      <trans-unit id="tl_content.brand-primary">
+        <source>Brand-Primary</source>
+      </trans-unit>
+      <trans-unit id="tl_content.brand-secondary">
+        <source>Brand-Secondary</source>
+      </trans-unit>
+      <trans-unit id="tl_content.background">
+        <source>Background (Body)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.white">
+        <source>White</source>
+      </trans-unit>
+      <trans-unit id="tl_content.black">
+        <source>Black</source>
+      </trans-unit>
+      <trans-unit id="tl_content.grey">
+        <source>Grey</source>
+      </trans-unit>
+      <trans-unit id="tl_content.red">
+        <source>Red</source>
+      </trans-unit>
+      <trans-unit id="tl_content.yellow">
+        <source>Yellow</source>
+      </trans-unit>
+      <trans-unit id="tl_content.green">
+        <source>Green</source>
+      </trans-unit>
+      <trans-unit id="tl_content.blue">
+        <source>Blue</source>
+      </trans-unit>
+      <trans-unit id="tl_content.orange">
+        <source>Orange</source>
+      </trans-unit>
+      <trans-unit id="tl_content.brown">
+        <source>Brown</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pink">
+        <source>Pink</source>
+      </trans-unit>
+      <trans-unit id="tl_content.violet">
+        <source>Violet</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cyan">
+        <source>Cyan</source>
+      </trans-unit>
+      <trans-unit id="tl_content.m">
+        <source>Außenabstand allseitig (m)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.mt">
+        <source>Außenabstand oben (mt)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.mr">
+        <source>Außenabstand rechts (mr)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.mb">
+        <source>Außenabstand unten (mb)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.ml">
+        <source>Außenabstand links (ml)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.me">
+        <source>Außenabstand rechts (me)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.ms">
+        <source>Außenabstand links (ms)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.p">
+        <source>Innenabstand allseitig (m)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pt">
+        <source>Innenabstand oben (mt)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pr">
+        <source>Innenabstand rechts (mr)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pb">
+        <source>Innenabstand unten (mb)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pl">
+        <source>Innenabstand links (ml)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.pe">
+        <source>Innenabstand rechts (pe)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.ps">
+        <source>Innenabstand links (ps)</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-text">
+        <source>Text</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-link">
+        <source>Link</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-hl">
+        <source>Headline</source>
       </trans-unit>
     </body>
   </file>
