@@ -56,7 +56,7 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 
 ##To Do
 
-- Text farbe und Eigenschaft teilen
+- content_bezeichner ändern in cbsd_
 - Translation
 
 

@@ -16,6 +16,23 @@ use Contao\DataContainer;
 
 $strName = 'tl_content';
 
+$display_viewport_options = ['sm','md','lg','xl'];
+$display_type_options = ['none','block','inline-block','inline'];
+
+$text_value_options = ['left','center','right','justify','shadow','underline','bold','italic','uppercase','brand-primary','brand-secondary','background','white','black','grey','red','yellow','green','blue','orange','brown','pink','violet','cyan'];
+$bgcolor_value_option = ['transparent','brand-primary','brand-secondary','background','white','black','grey','red','yellow','green','blue','orange','brown','pink','violet','cyan'];
+
+$margin_type_options =  ['mt','mr','mb','ml','m'];
+$padding_type_options =  ['pt','pr','pb','pl','p'];
+
+$margin_value_options = ['0','1', '2', '3', '4', '5', 'auto', 's1', 's2', 's3'];
+$padding_value_options = ['0','1', '2', '3', '4', '5', 's1', 's2', 's3'];
+
+$text_type_options = ['cbsd-text','cbsd-link','cbsd-hl'];
+
+$image_responsive_options = ['standard','always-responsive','always-responsive-desktop','always-responsive-tablet','no-responsive'];
+
+
 $GLOBALS['TL_DCA'][$strName]['fields']['content_display'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
@@ -23,15 +40,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_display'] = [
         'tl_class'=>'w50',
         'columnFields' => [
             'content_display_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_display_type'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_display_type'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'none' => 'Ausblenden (None)',
-                    'block' => 'Block',
-                    'inline-block' => 'Inline-Block',
-                    'inline' => 'Inline'
-                ],
+                'options' => $display_type_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:230px',
@@ -41,15 +54,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_display'] = [
                 ],
             ],
             'content_display_viewport' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_display_viewport'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_display_viewport'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'sm' => 'sm (Handy)',
-                    'md' => 'md (Tablet)',
-                    'lg'  => 'lg (Monitor)',
-                    'xl'  => 'xl (Monitor HD)'
-                ],
+                'options' => $display_viewport_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:140px',
@@ -73,12 +82,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
         'hideButtons'=>true,
         'columnFields' => [
             'content_bgcolor_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_bgcolor_type'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_bgcolor_type'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'cbsd-bg' => 'Hintergrundfarbe'
-                ],
+                'options' => ['cbsd-bg'],
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:170px',
@@ -87,12 +95,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
                 ],
             ],
             'content_bgcolor_property' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_bgcolor_property'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_bgcolor_property'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'transparent' => 'Transparent'
-                ],
+                'options' => ['opacity'],
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:120px',
@@ -102,27 +109,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_bgcolor'] = [
                 ],
             ],
             'content_bgcolor_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_bgcolor_value'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_bgcolor_value'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'transparent' => 'Keine (Transparent)',
-                    'brand-primary' => 'Brand-Primary',
-                    'brand-secondary' => 'Brand-Secondary',
-                    'background' => 'Hintergrund (Body)',
-                    'white' => 'Weiß',
-                    'black' => 'Schwarz',
-                    'grey' => 'Grau',
-                    'red' => 'Rot',
-                    'yellow' => 'Gelb',
-                    'green' => 'Grün',
-                    'blue' => 'Blau',
-                    'orange' => 'Orange',
-                    'brown' => 'Braun',
-                    'pink' => 'Pink',
-                    'violet' => 'Violett',
-                    'cyan' => 'Cyan'
-                ],
+                'options' => $bgcolor_value_option,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:160px',
@@ -145,16 +136,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
         'tl_class'=>'w50 clr',
         'columnFields' => [
             'content_margin_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_type'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_margin_type'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'mt' => 'Außenabstand oben (mt)',
-                    'mr' => 'Außenabstand rechts (mr)',
-                    'mb' => 'Außenabstand unten (mb)',
-                    'ml' => 'Außenabstand links (ml)',
-                    'm' => 'Außenabstand allseitig (m)',
-                ],
+                'options' => $margin_type_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:230px',
@@ -164,15 +150,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
                 ],
             ],
             'content_margin_viewport' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_viewport'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_margin_viewport'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'sm' => 'sm (Handy)',
-                    'md' => 'md (Tablet)',
-                    'lg'  => 'lg (Monitor)',
-                    'xl'  => 'xl (Monitor HD)'
-                ],
+                'options' => $display_viewport_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:140px',
@@ -182,10 +164,10 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_margin'] = [
                 ],
             ],
             'content_margin_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_margin_value'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_margin_value'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => ['0','1', '2', '3', '4', '5', 'auto', 's1', 's2', 's3'],
+                'options' => $margin_value_options,
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:80px',
@@ -207,16 +189,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
         'tl_class'=>'w50',
         'columnFields' => [
             'content_padding_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_type'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_padding_type'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'pt' => 'Innenabstand oben (pt)',
-                    'pr' => 'Innenabstand rechts (pr)',
-                    'pb' => 'Innenabstand unten (pb)',
-                    'pl' => 'Innenabstand links (pl)',
-                    'p' => 'Innenabstand allseitig (p)'
-                ],
+                'options' => $padding_type_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:230px',
@@ -226,15 +203,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
                 ],
             ],
             'content_padding_viewport' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_viewport'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_padding_viewport'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'sm' => 'sm (Handy)',
-                    'md' => 'md (Tablet)',
-                    'lg'  => 'lg (Monitor)',
-                    'xl'  => 'xl (Monitor HD)'
-                ],
+                'options' => $display_viewport_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:140px',
@@ -244,10 +217,10 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_padding'] = [
                 ],
             ],
             'content_padding_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_padding_value'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_padding_value'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => ['0','1', '2', '3', '4', '5', 's1', 's2', 's3'],
+                'options' => $padding_value_options,
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:80px',
@@ -270,14 +243,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_text'] = [
         'tl_class'=>'w50 clr',
         'columnFields' => [
             'content_text_type' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_text_type'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_text_type'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'cbsd-text' => 'Text',
-                    'cbsd-link' => 'Link',
-                    'cbsd-hl' => 'Überschrift'
-                ],
+                'options' => $text_type_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:170px',
@@ -287,35 +257,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_text'] = [
                 ],
             ],
             'content_text_value' => [
-                'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_text_value'],
+                'label' => &$GLOBALS['TL_LANG'][$strName]['content_text_value'],
                 'exclude' => true,
                 'inputType' => 'select',
-                'options' => [
-                    'left' => 'Linksbündig',
-                    'center' => 'Zentriert',
-                    'right' => 'Rechtsbündig',
-                    'justify' => 'Ausgerichtet',
-                    'shadow' => 'Schatten',
-                    'underline' => 'Unterstrichen',
-                    'bold' => 'Breit',
-                    'italic' => 'Kursiv',
-                    'uppercase' => 'Hochgestellt',
-                    'brand-primary' => 'Brand-Primary',
-                    'brand-secondary' => 'Brand-Secondary',
-                    'background' => 'Hintergrund (Body)',
-                    'white' => 'Weiß',
-                    'black' => 'Schwarz',
-                    'grey' => 'Grau',
-                    'red' => 'Rot',
-                    'yellow' => 'Gelb',
-                    'green' => 'Grün',
-                    'blue' => 'Blau',
-                    'orange' => 'Orange',
-                    'brown' => 'Braun',
-                    'pink' => 'Pink',
-                    'violet' => 'Violett',
-                    'cyan' => 'Cyan'
-                ],
+                'options' => $text_value_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:160px',
@@ -331,16 +277,11 @@ $GLOBALS['TL_DCA'][$strName]['fields']['content_text'] = [
 ];
 
 $GLOBALS['TL_DCA'][$strName]['fields']['content_image_responsive'] = [
-    'label' => &$GLOBALS['TL_LANG'][$strName]['fields']['content_image_responsive'],
+    'label' => &$GLOBALS['TL_LANG'][$strName]['content_image_responsive'],
     'exclude'               => true,
     'inputType'             => 'select',
-    'options' => [
-        'standard' => 'Standard',
-        'always-responsive' => 'Immer aufspannen',
-        'always-responsive-desktop' => 'Bis Desktop aufspannen',
-        'always-responsive-tablet' => 'Bis Tablet aufspannen',
-        'no-responsive' => 'Nicht responsive'
-    ],
+    'options' => $image_responsive_options,
+    'reference' => &$GLOBALS['TL_LANG']['tl_content'],
     'eval'                  => ['tl_class'=>'w50'],
     'sql'                   => "varchar(255) NOT NULL default ''",
 ];

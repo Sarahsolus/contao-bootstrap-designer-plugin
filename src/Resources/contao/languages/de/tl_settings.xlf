@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+  <file datatype="php" original="tl_settings.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_settings.cbsd_settings_container.0">
+        <source>Default value for Article container class</source>
+        <target>Voreinstellung für Artikel Containerklasse</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.cbsd_settings_container.1">
+        <source>Set the default container class of a new article to the chosen value</source>
+        <target>Setzt die Containerklasse eines neuen Artikels automatisch auf die gewählte Einstellung.</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.container">
+        <source>Fixed witdh (container)</source>
+        <target>Feste Breite (container)</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.container-fluid">
+        <source>Full width (container-fluid)</source>
+        <target>Über die ganze Breite (container-fluid)</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.cbsd_settings_responsive.0">
+        <source>Default value for responsive preference</source>
+        <target>Voreinstellung für Responsive Einstellung</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.cbsd_settings_responsive.1">
+        <source>Set the default responsive preference of a new image or video element to the chosen value</source>
+        <target>Setzt die Responsive Einstellung eines neuen Bild oder Video Elements auf die gewählte Einstellung.</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.standard">
+        <source>Standard</source>
+        <target>Standard</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.always-responsive">
+        <source>Always responsive</source>
+        <target>Immer aufspannen</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.always-responsive-desktop">
+        <source>Resposive until Desktop size</source>
+        <target>Bis Desktop aufspannen</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.always-responsive-tablet">
+        <source>Resposive until Tablet size</source>
+        <target>Bis Tablet aufspannen</target>
+      </trans-unit>
+      <trans-unit id="tl_settings.no-responsive">
+        <source>Not responsive</source>
+        <target>Nicht responsive</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

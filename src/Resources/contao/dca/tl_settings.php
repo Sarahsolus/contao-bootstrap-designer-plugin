@@ -23,9 +23,10 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['cbsd_settings_container'] = [
     'exclude' => true,
     'inputType' => 'select',
     'options' => [
-        'container' => 'Feste Breite (container)',
-        'container-fluid' => 'Über die ganze Breite (container-fluid)'
+        'container',
+        'container-fluid'
     ],
+    'reference' => &$GLOBALS['TL_LANG']['tl_settings'],
     'eval' => [
         'exclude' => true,
         'maxlength' => 255,
@@ -41,12 +42,13 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['cbsd_settings_responsive'] = [
     'exclude' => true,
     'inputType' => 'select',
     'options' => [
-        'standard' => 'Standard',
-        'always-responsive' => 'Immer aufspannen',
-        'always-responsive-desktop' => 'Bis Desktop aufspannen',
-        'always-responsive-tablet' => 'Bis Tablet aufspannen',
-        'no-responsive' => 'Nicht responsive'
+        'standard',
+        'always-responsive',
+        'always-responsive-desktop',
+        'always-responsive-tablet',
+        'no-responsive'
     ],
+    'reference' => &$GLOBALS['TL_LANG']['tl_settings'],
     'eval' => [
         'exclude' => true,
         'maxlength' => 255,

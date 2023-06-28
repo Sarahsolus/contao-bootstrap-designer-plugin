@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<xliff version="1.1">
+  <file datatype="php" original="tl_content.php" source-language="en">
+    <body>
+      <trans-unit id="tl_content.content_design_legend">
+        <source>Design</source>
+      </trans-unit>
+      <trans-unit id="tl_content.content_margin.0">
+        <source>Margin</source>
+      </trans-unit>
+      <trans-unit id="tl_content.content_margin.1">
+        <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
+      </trans-unit>
+       <trans-unit id="tl_content.content_margin_type">
+         <source>Margin type</source>
+       </trans-unit>
+       <trans-unit id="tl_content.content_margin_viewport">
+         <source>Viewport</source>
+       </trans-unit>
+       <trans-unit id="tl_content.content_margin_value">
+         <source>Value</source>
+       </trans-unit>
+      <trans-unit id="tl_content.content_padding.0">
+        <source>Padding</source>
+      </trans-unit>
+      <trans-unit id="tl_content.content_padding.1">
+        <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
+      </trans-unit>
+       <trans-unit id="tl_content.content_padding_type">
+         <source>Padding type</source>
+       </trans-unit>
+       <trans-unit id="tl_content.content_padding_viewport">
+         <source>Viewport</source>
+       </trans-unit>
+       <trans-unit id="tl_content.content_padding_value">
+         <source>Value</source>
+       </trans-unit>
+      <trans-unit id="tl_content.content_display.0">
+        <source>Display</source>
+      </trans-unit>
+      <trans-unit id="tl_content.content_display.1">
+        <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
+      </trans-unit>
+       <trans-unit id="tl_content.content_display_type">
+         <source>Display type</source>
+       </trans-unit>
+       <trans-unit id="tl_content.content_display_viewport">
+         <source>Viewport</source>
+       </trans-unit>
+      <trans-unit id="tl_content.content_bgcolor.0">
+        <source>Background Color</source>
+      </trans-unit>
+      <trans-unit id="tl_content.content_bgcolor.1">
+        <source>Background color of element</source>
+      </trans-unit>
+       <trans-unit id="tl_content.content_bgcolor_type">
+         <source>Background color</source>
+       </trans-unit>
+       <trans-unit id="tl_content.content_bgcolor_property">
+         <source>Transparency</source>
+       </trans-unit>
+       <trans-unit id="tl_content.content_bgcolor_value">
+         <source>Color</source>
+       </trans-unit>
+      <trans-unit id="tl_content.content_text.0">
+        <source>Texteigenschaften</source>
+      </trans-unit>
+      <trans-unit id="tl_content.content_text.1">
+        <source>Texteigenschaften innerhalb des Elements</source>
+      </trans-unit>
+       <trans-unit id="tl_content.content_text_type">
+         <source>Text type</source>
+       </trans-unit>
+       <trans-unit id="tl_content.content_text_value">
+         <source>Property</source>
+       </trans-unit>
+      <trans-unit id="tl_content.content_image_responsive">
+        <source>responsive display</source>
+      </trans-unit>
+      <trans-unit id="tl_content.standard">
+        <source>Standard</source>
+      </trans-unit>
+      <trans-unit id="tl_content.always-responsive">
+        <source>Always responsive</source>
+      </trans-unit>
+      <trans-unit id="tl_content.always-responsive-desktop">
+        <source>Resposive until Desktop size</source>
+      </trans-unit>
+      <trans-unit id="tl_content.always-responsive-tablet">
+        <source>Resposive until Tablet size</source>
+      </trans-unit>
+      <trans-unit id="tl_content.no-responsive">
+        <source>Not responsive</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

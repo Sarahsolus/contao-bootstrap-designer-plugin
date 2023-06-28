@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+  <file datatype="php" original="tl_article.php" source-language="en">
+    <body>
+       <trans-unit id="tl_article.cbsd_article_container.0">
+              <source>Containerclass</source>
+       </trans-unit>
+       <trans-unit id="tl_article.cbsd_article_container.0">
+              <source>Places the articles content in a container</source>
+       </trans-unit>
+       <trans-unit id="tl_article.container">
+         <source>Fixed witdh (container)</source>
+       </trans-unit>
+       <trans-unit id="tl_article.container-fluid">
+         <source>Full width (container-fluid)</source>
+       </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -26,9 +26,10 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container'] = [
     'exclude' => true,
     'inputType' => 'select',
     'options' => [
-        'container' => 'Feste Breite (container)',
-        'container-fluid' => 'Über die ganze Breite (container-fluid)'
+        'container',
+        'container-fluid'
     ],
+    'reference' => &$GLOBALS['TL_LANG']['tl_article'],
     'eval' => [
         'exclude' => true,
         'maxlength' => 255,

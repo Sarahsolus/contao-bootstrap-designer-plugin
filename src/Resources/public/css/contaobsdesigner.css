@@ -109,19 +109,19 @@
 .cbsd-bg-violet {background-color: violet !important;}
 .cbsd-bg-cyan {background-color: cyan !important;}
 
-.cbsd-bg-transparent, .cbsd-bg-transparent-transparent {background-color: transparent !important;}
-.cbsd-bg-transparent-red {background-color: rgba(255,0,0,0.5) !important;}
-.cbsd-bg-transparent-yellow {background-color: rgba(255,255,0,0.5) !important;}
-.cbsd-bg-transparent-blue {background-color: rgba(0,0,255,0.5) !important;}
-.cbsd-bg-transparent-orange {background-color: rgba(255,128,0,0.5) !important;}
-.cbsd-bg-transparent-green {background-color: rgba(0,255,0,0.5) !important;}
-.cbsd-bg-transparent-brown {background-color: rgba(165,42,42,0.5) !important;}
-.cbsd-bg-transparent-black {background-color: rgba(0,0,0,0.5) !important;}
-.cbsd-bg-transparent-white {background-color: rgba(255,255,255,0.5) !important;}
-.cbsd-bg-transparent-grey {background-color: rgba(180,180,180,0.5) !important;}
-.cbsd-bg-transparent-pink {background-color: rgba(255,192,203,0.5) !important;}
-.cbsd-bg-transparent-violet {background-color: rgba(238,130,238,0.5) !important;}
-.cbsd-bg-transparent-cyan {background-color: rgba(0,255,255,0.5) !important;}
+.cbsd-bg-opacity, .cbsd-bg-opacity-transparent {background-color: transparent !important;}
+.cbsd-bg-opacity-red {background-color: rgba(255,0,0,0.5) !important;}
+.cbsd-bg-opacity-yellow {background-color: rgba(255,255,0,0.5) !important;}
+.cbsd-bg-opacity-blue {background-color: rgba(0,0,255,0.5) !important;}
+.cbsd-bg-opacity-orange {background-color: rgba(255,128,0,0.5) !important;}
+.cbsd-bg-opacity-green {background-color: rgba(0,255,0,0.5) !important;}
+.cbsd-bg-opacity-brown {background-color: rgba(165,42,42,0.5) !important;}
+.cbsd-bg-opacity-black {background-color: rgba(0,0,0,0.5) !important;}
+.cbsd-bg-opacity-white {background-color: rgba(255,255,255,0.5) !important;}
+.cbsd-bg-opacity-grey {background-color: rgba(180,180,180,0.5) !important;}
+.cbsd-bg-opacity-pink {background-color: rgba(255,192,203,0.5) !important;}
+.cbsd-bg-opacity-violet {background-color: rgba(238,130,238,0.5) !important;}
+.cbsd-bg-opacity-cyan {background-color: rgba(0,255,255,0.5) !important;}
 
 
 /* media responsive classes */
