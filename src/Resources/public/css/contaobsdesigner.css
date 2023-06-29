@@ -16,8 +16,12 @@
 
 /* element classes */
 
-.cbsd-element-border {
+.cbsd-element-border-black {
     border:1px solid black;
+}
+
+.cbsd-element-border-grey {
+    border:1px solid grey;
 }
 
 .cbsd-element-rounded {

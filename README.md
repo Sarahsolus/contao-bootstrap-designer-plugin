@@ -57,7 +57,7 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 ##To Do
 
 - Element Eigenschaften Border, Rounded, Shadow
-- missing English Translation
+- Button Classes for Hyperlinks
 
 
 

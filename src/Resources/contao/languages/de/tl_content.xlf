@@ -11,7 +11,7 @@
         <target>Außenabstand</target>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_margin.1">
-        <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
+        <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
         <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
       </trans-unit>
        <trans-unit id="tl_content.cbsd_margin_type">
@@ -31,7 +31,7 @@
         <target>Innenabstand</target>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_padding.1">
-        <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
+        <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
         <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
       </trans-unit>
        <trans-unit id="tl_content.cbsd_padding_type">
@@ -51,7 +51,7 @@
         <target>Darstellung</target>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_display.1">
-        <source>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</source>
+        <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
         <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
       </trans-unit>
        <trans-unit id="tl_content.cbsd_display_type">
@@ -111,11 +111,11 @@
          <target>Farbe</target>
        </trans-unit>
       <trans-unit id="tl_content.cbsd_text.0">
-        <source>Texteigenschaften</source>
+        <source>Text properties</source>
         <target>Texteigenschaften</target>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_text.1">
-        <source>Texteigenschaften innerhalb des Elements</source>
+        <source>Text properties within the element</source>
         <target>Texteigenschaften innerhalb des Elements</target>
       </trans-unit>
        <trans-unit id="tl_content.cbsd_text_type">
@@ -175,7 +175,7 @@
         <target>xxl (Desktop UHD)</target>
       </trans-unit>
       <trans-unit id="tl_content.left">
-        <source>Linksbündig</source>
+        <source>Left-justified</source>
         <target>Linksbündig</target>
       </trans-unit>
       <trans-unit id="tl_content.center">
@@ -183,7 +183,7 @@
         <target>Zentriert</target>
       </trans-unit>
       <trans-unit id="tl_content.right">
-        <source>Rechtsbündig</source>
+        <source>Right-justified</source>
         <target>Rechtsbündig</target>
       </trans-unit>
       <trans-unit id="tl_content.justify">
@@ -271,59 +271,59 @@
         <target>Cyan</target>
       </trans-unit>
       <trans-unit id="tl_content.m">
-        <source>Außenabstand allseitig (m)</source>
+        <source>Margin all sides (m)</source>
         <target>Außenabstand allseitig (m)</target>
       </trans-unit>
       <trans-unit id="tl_content.mt">
-        <source>Außenabstand oben (mt)</source>
+        <source>Margin Top (mt)</source>
         <target>Außenabstand oben (mt)</target>
       </trans-unit>
       <trans-unit id="tl_content.mr">
-        <source>Außenabstand rechts (mr)</source>
+        <source>Margin Right (mr)</source>
         <target>Außenabstand rechts (mr)</target>
       </trans-unit>
       <trans-unit id="tl_content.mb">
-        <source>Außenabstand unten (mb)</source>
+        <source>Margin Bottom (mb)</source>
         <target>Außenabstand unten (mb)</target>
       </trans-unit>
       <trans-unit id="tl_content.ml">
-        <source>Außenabstand links (ml)</source>
+        <source>Margin Left (ml)</source>
         <target>Außenabstand links (ml)</target>
       </trans-unit>
       <trans-unit id="tl_content.me">
-        <source>Außenabstand rechts (me)</source>
+        <source>Margin Right (me)</source>
         <target>Außenabstand rechts (me)</target>
       </trans-unit>
       <trans-unit id="tl_content.ms">
-        <source>Außenabstand links (ms)</source>
+        <source>Margin Left (ms)</source>
         <target>Außenabstand links (ms)</target>
       </trans-unit>
       <trans-unit id="tl_content.p">
-        <source>Innenabstand allseitig (m)</source>
-        <target>Innenabstand allseitig (m)</target>
+        <source>Padding all sides (p)</source>
+        <target>Innenabstand allseitig (p)</target>
       </trans-unit>
       <trans-unit id="tl_content.pt">
-        <source>Innenabstand oben (mt)</source>
-        <target>Innenabstand oben (mt)</target>
+        <source>Padding Top (pt)</source>
+        <target>Innenabstand oben (pt)</target>
       </trans-unit>
       <trans-unit id="tl_content.pr">
-        <source>Innenabstand rechts (mr)</source>
-        <target>Innenabstand rechts (mr)</target>
+        <source>Padding Right (pr)</source>
+        <target>Innenabstand rechts (pr)</target>
       </trans-unit>
       <trans-unit id="tl_content.pb">
-        <source>Innenabstand unten (mb)</source>
-        <target>Innenabstand unten (mb)</target>
+        <source>Padding Bottom (pb)</source>
+        <target>Innenabstand unten (pb)</target>
       </trans-unit>
       <trans-unit id="tl_content.pl">
-        <source>Innenabstand links (ml)</source>
-        <target>Innenabstand links (ml)</target>
+        <source>Padding Left (pl)</source>
+        <target>Innenabstand links (pl)</target>
       </trans-unit>
       <trans-unit id="tl_content.pe">
-        <source>Innenabstand rechts (pe)</source>
+        <source>Padding Right (pe)</source>
         <target>Innenabstand rechts (pe)</target>
       </trans-unit>
       <trans-unit id="tl_content.ps">
-        <source>Innenabstand links (ps)</source>
+        <source>Padding Left (ps)</source>
         <target>Innenabstand links (ps)</target>
       </trans-unit>
       <trans-unit id="tl_content.cbsd-text">
@@ -338,6 +338,23 @@
         <source>Headline</source>
         <target>Überschrift</target>
       </trans-unit>
+      <trans-unit id="tl_content.cbsd_element.0">
+        <source>Properties of content element</source>
+        <target>Eigenschaften des Inhaltselements</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_element.1">
+        <source></source>
+        <target></target>
+      </trans-unit>
+       <trans-unit id="tl_content.cbsd_element_type">
+         <source>Type</source>
+         <target>Typ</target>
+       </trans-unit>
+       <trans-unit id="tl_content.cbsd_element_value">
+         <source>Property</source>
+         <target>Eigenschaften</target>
+       </trans-unit>
     </body>
   </file>
 </xliff>
+
