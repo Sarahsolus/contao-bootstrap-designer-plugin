@@ -89,6 +89,12 @@
       <trans-unit id="tl_content.cbsd_text.1">
         <source>Text properties within the element</source>
       </trans-unit>
+      <trans-unit id="tl_content.cbsd_headline.0">
+        <source>Headline properties</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_headline.1">
+        <source></source>
+      </trans-unit>
        <trans-unit id="tl_content.cbsd_text_type">
          <source>Text type</source>
        </trans-unit>

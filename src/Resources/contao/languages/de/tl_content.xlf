@@ -118,6 +118,14 @@
         <source>Text properties within the element</source>
         <target>Texteigenschaften innerhalb des Elements</target>
       </trans-unit>
+      <trans-unit id="tl_content.cbsd_headline.0">
+        <source>Headline properties</source>
+        <target>Eigenschaften der Überschrift</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_headline.1">
+        <source></source>
+        <target></target>
+      </trans-unit>
        <trans-unit id="tl_content.cbsd_text_type">
          <source>Text type</source>
          <target>Texttyp</target>

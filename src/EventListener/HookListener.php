@@ -28,7 +28,7 @@ class HookListener
         // var_dump ($test_array);
         // var_dump (($object->cbsd_margin || $object->cbsd_padding || $object->cbsd_display || $object->cbsd_color || $object->cbsd_image_responsive));
 
-        if (TL_MODE === 'BE' || !($object->cbsd_margin || $object->cbsd_padding || $object->cbsd_display || $object->cbsd_color || $object->cbsd_image_responsive)) {
+        if (TL_MODE === 'BE' || !($object->cbsd_margin || $object->cbsd_padding || $object->cbsd_display || $object->cbsd_color || $object->cbsd_text || $object->cbsd_headline || $object->cbsd_image_responsive)) {
             return $buffer;
         }
 
@@ -90,7 +90,7 @@ class HookListener
             }
         }
 
-        // Content Text Propertys
+        // Content Text Properties
         if ($object->cbsd_text) {
             $cbsd_text = unserialize($object->cbsd_text,['']);
             foreach ($cbsd_text as $cbsd_text_row) {
@@ -103,7 +103,17 @@ class HookListener
             }
         }
 
+        // Content Headline Properties
+        if ($object->cbsd_headline) {
+            $cbsd_headline = unserialize($object->cbsd_headline,['']);
+            foreach ($cbsd_headline as $cbsd_headline_row) {
+                    if ($cbsd_headline_row['cbsd_headline_value']) {
+                        $classes.= 'cbsd-text-'.$cbsd_headline_row['cbsd_headline_value'].' ';
+                    }
+            }
+        }
 
+        // Content Button Properties
         if ($object->cbsd_button) {
             $cbsd_button = unserialize($object->cbsd_button,['']);
             foreach ($cbsd_button as $cbsd_button_row) {
@@ -119,8 +129,6 @@ class HookListener
                 }
             }
         }
-
-
 
         if ($object->cbsd_image_responsive) {
             $cbsd_image_responsive = $object->cbsd_image_responsive;

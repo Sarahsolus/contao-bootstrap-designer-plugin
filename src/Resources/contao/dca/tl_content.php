@@ -278,6 +278,37 @@ $GLOBALS['TL_DCA'][$strName]['fields']['cbsd_text'] = [
     'sql' => "blob NULL",
 ];
 
+
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_headline'] = [
+    'inputType' => 'multiColumnWizard',
+    'exclude' => true,
+    'eval' => [
+        'tl_class'=>'w50 clr',
+        'columnFields' => [
+            'cbsd_headline_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_text_value'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => $text_value_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:260px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+        ],
+        'disableSorting' => true,
+    ],
+    'sql' => "blob NULL",
+];
+
+
+
+
+
 $GLOBALS['TL_DCA'][$strName]['fields']['cbsd_image_responsive'] = [
     'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_image_responsive'],
     'exclude'               => true,
@@ -350,7 +381,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['cbsd_button'] = [
 
 $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (DataContainer $dc): void {
     foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $key => $palette) {
-        if (\is_string($palette)) {
+        if (\is_string($palette) && $key !== 'headline' ) {
             PaletteManipulator::create()
                 ->addLegend('cbsd_design_legend', 'expert_legend', PaletteManipulator::POSITION_BEFORE, true)
                 ->addField('cbsd_display', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
@@ -358,10 +389,20 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
                 ->addField('cbsd_margin', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('cbsd_padding', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('cbsd_text', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
-                ->applyToPalette($key, $dc->table)
-            ;
+                ->applyToPalette($key, $dc->table);
         }
     }
+
+    // Headline
+    PaletteManipulator::create()
+        ->addLegend('cbsd_design_legend', 'expert_legend', PaletteManipulator::POSITION_BEFORE, true)
+        ->addField('cbsd_display', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+        ->addField('cbsd_bgcolor', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+        ->addField('cbsd_margin', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+        ->addField('cbsd_padding', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+        ->addField('cbsd_headline', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+        ->applyToPalette('headline', 'tl_content');
+
 
     // Button Link Option
     PaletteManipulator::create()
