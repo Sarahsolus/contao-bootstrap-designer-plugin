@@ -32,6 +32,8 @@ $text_type_options = ['cbsd-text','cbsd-link','cbsd-hl'];
 
 $image_responsive_options = ['standard','always-responsive','always-responsive-desktop','always-responsive-tablet','no-responsive'];
 
+$button_value_options = ['btn-primary','btn-secondary','btn-success','btn-danger','btn-warning','btn-info','btn-light','btn-dark'];
+
 
 $GLOBALS['TL_DCA'][$strName]['fields']['cbsd_display'] = [
     'inputType' => 'multiColumnWizard',
@@ -286,6 +288,66 @@ $GLOBALS['TL_DCA'][$strName]['fields']['cbsd_image_responsive'] = [
     'sql'                   => "varchar(255) NOT NULL default ''",
 ];
 
+
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_button'] = [
+    'inputType' => 'multiColumnWizard',
+    'exclude' => true,
+    'eval' => [
+        'tl_class'=>'clr w50',
+        'columnFields' => [
+            'cbsd_button_type' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_button_type'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => ['button'],
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:140px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+            'cbsd_button_outline' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_button_outline'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => ['outline'],
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:140px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+            'cbsd_button_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_button_value'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => $button_value_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:140px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+        ],
+        'disableSorting' => true,
+        'hideButtons' => true,
+    ],
+    'sql' => "blob NULL",
+];
+
+
+
+
+
 $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (DataContainer $dc): void {
     foreach ($GLOBALS['TL_DCA'][$dc->table]['palettes'] as $key => $palette) {
         if (\is_string($palette)) {
@@ -300,6 +362,15 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
             ;
         }
     }
+
+    // Button Link Option
+    PaletteManipulator::create()
+        ->addField('cbsd_button', 'rel')
+        ->applyToPalette('hyperlink', 'tl_content');
+    PaletteManipulator::create()
+        ->addField('cbsd_button', 'linkTitle')
+        ->applyToPalette('toplink', 'tl_content');
+
 
     // Responsive Option
     PaletteManipulator::create()

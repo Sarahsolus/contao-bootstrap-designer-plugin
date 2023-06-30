@@ -143,6 +143,35 @@
 .cbsd-bg-opacity-violet {background-color: rgba(238,130,238,0.5) !important;}
 .cbsd-bg-opacity-cyan {background-color: rgba(0,255,255,0.5) !important;}
 
+/* Button Special Class*/
+.cbsd_btn {
+    padding: 0 !important;
+}
+
+.cbsd_btn a {
+    display: block;
+    padding: .375rem .75rem;
+    text-decoration: none !important;
+    color: #ffffff;
+    transition: color .15s ease-in-out;
+}
+
+.cbsd_btn.btn-light a, .cbsd_btn.btn-warning a {
+    color: #212529;
+}
+
+.cbsd_btn.btn-outline-success a { color: #28a745; }
+.cbsd_btn.btn-outline-primary a { color: #007bff; }
+.cbsd_btn.btn-outline-secondary a { color: #6c757d; }
+.cbsd_btn.btn-outline-danger a { color: #dc3545; }
+.cbsd_btn.btn-outline-warning a { color: #ffc107; }
+.cbsd_btn.btn-outline-info a { color: #17a2b8; }
+.cbsd_btn.btn-outline-dark a { color: #343a40; }
+.cbsd_btn.btn-outline-light a { color: #f8f9fa; }
+
+.cbsd_btn.btn-outline-success:hover a, .cbsd_btn.btn-outline-primary:hover a, .cbsd_btn.btn-outline-secondary a:hover, .cbsd_btn.btn-outline-danger a:hover, .cbsd_btn.btn-outline-warning:hover a, .cbsd_btn.btn-outline-info:hover a, .cbsd_btn.btn-outline-dark:hover a { color: #ffffff; }
+.cbsd_btn.btn-outline-light:hover a { color: #212529; }
+
 
 /* media responsive classes */
 

@@ -266,6 +266,51 @@
        <trans-unit id="tl_content.cbsd_element_value">
          <source>Property</source>
        </trans-unit>
+      <trans-unit id="tl_content.cbsd_button.0">
+        <source>Display link as a button</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_button.1">
+        <source></source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_button_type">
+        <source>Button</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_button_outline">
+        <source>Outline</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_button_value">
+        <source>Property</source>
+      </trans-unit>
+      <trans-unit id="tl_content.button">
+        <source>Button</source>
+      </trans-unit>
+      <trans-unit id="tl_content.outline">
+        <source>Outlined</source>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-primary">
+        <source>Button 1</source>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-secondary">
+        <source>Button 2</source>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-success">
+        <source>Button Success</source>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-danger">
+        <source>Button Danger</source>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-warning">
+        <source>Button Warning</source>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-info">
+        <source>Button Info</source>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-light">
+        <source>Button Light</source>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-dark">
+        <source>Button Dark</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

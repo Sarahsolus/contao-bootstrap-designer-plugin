@@ -354,7 +354,68 @@
          <source>Property</source>
          <target>Eigenschaften</target>
        </trans-unit>
+      <trans-unit id="tl_content.cbsd_button.0">
+        <source>Display link as a button</source>
+        <target>Link als Button darstellen</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_button.1">
+        <source></source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_button_type">
+        <source>Button</source>
+        <target>Button</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_button_outline">
+        <source>Outline</source>
+        <target>Kontur</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_button_value">
+        <source>Property</source>
+        <target>Eigenschaften</target>
+      </trans-unit>
+      <trans-unit id="tl_content.button">
+        <source>Button</source>
+        <target>Button</target>
+      </trans-unit>
+      <trans-unit id="tl_content.outline">
+        <source>Outlined</source>
+        <target>Konturiert</target>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-primary">
+        <source>Button 1</source>
+        <target>Button 1</target>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-secondary">
+        <source>Button 2</source>
+        <target>Button 2</target>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-success">
+        <source>Button Success</source>
+        <target>Button Erfolg</target>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-danger">
+        <source>Button Danger</source>
+        <target>Button Gefahr</target>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-warning">
+        <source>Button Warning</source>
+        <target>Button Warnung</target>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-info">
+        <source>Button Info</source>
+        <target>Button Info</target>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-light">
+        <source>Button Light</source>
+        <target>Button Hell</target>
+      </trans-unit>
+      <trans-unit id="tl_content.btn-dark">
+        <source>Button Dark</source>
+        <target>Button Dunkel</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
+
 

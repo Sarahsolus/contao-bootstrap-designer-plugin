@@ -24,7 +24,11 @@ class HookListener
      */
     private function processBuffer(string $buffer, $object): string
     {
-        if (TL_MODE === 'BE' || (!$object->cbsd_margin && !$object->cbsd_padding && !$object->cbsd_display && !$object->cbsd_color)) {
+        // $test_array = [$object->cbsd_margin,$object->cbsd_padding,$object->cbsd_display,$object->cbsd_color,$object->cbsd_image_responsive];
+        // var_dump ($test_array);
+        // var_dump (($object->cbsd_margin || $object->cbsd_padding || $object->cbsd_display || $object->cbsd_color || $object->cbsd_image_responsive));
+
+        if (TL_MODE === 'BE' || !($object->cbsd_margin || $object->cbsd_padding || $object->cbsd_display || $object->cbsd_color || $object->cbsd_image_responsive)) {
             return $buffer;
         }
 
@@ -98,6 +102,25 @@ class HookListener
                 }
             }
         }
+
+
+        if ($object->cbsd_button) {
+            $cbsd_button = unserialize($object->cbsd_button,['']);
+            foreach ($cbsd_button as $cbsd_button_row) {
+                if ($cbsd_button_row['cbsd_button_type']) {
+                    $cbsd_button_class = 'cbsd_btn btn btn-';
+                    if ($cbsd_button_row['cbsd_button_outline']) {
+                        $cbsd_button_class .= 'outline-';
+                    }
+                    if ($cbsd_button_row['cbsd_button_value']) {
+                        $cbsd_button_class .= str_replace('btn-','',$cbsd_button_row['cbsd_button_value']);
+                        $classes.= $cbsd_button_class.' ';
+                    }
+                }
+            }
+        }
+
+
 
         if ($object->cbsd_image_responsive) {
             $cbsd_image_responsive = $object->cbsd_image_responsive;

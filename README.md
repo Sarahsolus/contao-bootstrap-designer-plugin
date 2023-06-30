@@ -1,13 +1,15 @@
 # Contao Bootstrap Designer Bundle for Contao 4
 
-The Contao Bootstrap Designer Bundle for Contao 4 adds backend functionality to Contao 4 to enable agencies and web developers to customize the design of the website or the individual elements more quickly.
+The Contao Bootstrap Designer Bundle for Contao 4 adds Frontend Styling functionality to the Contao 4 Backend.
+It aims for Web developers & Online agencies who want to safe time, and Backend Users who need to do (responsive) Styling. 
 
-In addition, it offers its own classes, as well as classes that can be customized in your own CSS.
+In addition to the Bootstrap classes, it also offers its own classes, as well as classes that can be customized in your own CSS.
 
 Features:
 - easily selectable settings for margin, padding, display adjustable for all Bootstrap viewports
 - easily selectable text and background color settings including transparency, as well as other text settings
 - quickly selectable settings for responsive behavior of images
+- simply turn a Hyperlink into a Bootstrap button
 - quickly selectable container or container fluid settings for items
 - default responsive behavior and article container settings
 
@@ -22,14 +24,21 @@ composer require sarahsolus/contaobsdesigner
 ## Getting started
 
 Contao Bootstrap Designer Bundle for Contao 4 requires Bootstrap 4 to work properly.
-Install a Contao Bootstrap plugin or add Bootstrap 4 manually (into your FE_Page).
+Install a Contao Bootstrap plugin or add Bootstrap 4 manualy (into your FE_Page).
 
 There will be new Settings in the Contao Backend:
 
 - each element has a Design section
 - each image element has a new responsive setting
+- each hyperlink and Top-Link element has a new button setting
 - in the article settings under layout there is a new container setting
 - in the Contao settings - Backend setting there are new settings for default settings
+
+
+Before creating new articles, change the default container class settings.
+
+
+
 
 You can add
 
@@ -49,16 +58,21 @@ You can add
 .cbsd-hl-brand-secondary h1,.cbsd-hl-brand-secondary h2,.cbsd-hl-brand-secondary h3,.cbsd-hl-brand-secondary h4,.cbsd-hl-brand-secondary h5,.cbsd-hl-brand-secondary h6 { color: $brand-secondary !important; }
 ```
 
-to your SCSS to define primary and secondary brand color.
+to your SCSS to define primary and secondary brand colors.
 
 There are also three unused special classes (s1,s2,s3) you can use for your special margin / padding values.
+
+## Notes
+
+- due to Contaos link element structure I had to cheat myself around with own styling classes. 
+- 
 
 
 ##To Do
 
 - Element Eigenschaften Border, Rounded, Shadow
-- Button Classes for Hyperlinks
-
+- Bootstrap 5 Ready ?
+- 
 
 
 
