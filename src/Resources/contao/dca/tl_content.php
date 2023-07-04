@@ -28,6 +28,8 @@ $padding_type_options =  ['pt','pr','pb','pl','p'];
 $margin_value_options = ['0','1', '2', '3', '4', '5', 'auto', 's1', 's2', 's3'];
 $padding_value_options = ['0','1', '2', '3', '4', '5', 's1', 's2', 's3'];
 
+$headline_class_options = ['h1','h2','h3','h4','h5','h6'];
+
 $text_type_options = ['cbsd-text','cbsd-link','cbsd-hl'];
 
 $image_responsive_options = ['standard','always-responsive','always-responsive-desktop','always-responsive-tablet','no-responsive'];
@@ -305,6 +307,20 @@ $GLOBALS['TL_DCA'][$strName]['fields']['cbsd_headline'] = [
     'sql' => "blob NULL",
 ];
 
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_headline_class'] = [
+    'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_headline_class'],
+    'exclude'               => true,
+    'inputType'             => 'select',
+    'options' => $headline_class_options,
+    'reference' => &$GLOBALS['TL_LANG']['tl_content'],
+    'eval'                  => [
+        'exclude' => true,
+        'style' => 'width:260px',
+        'tl_class'=>'w50',
+        'includeBlankOption' => true,
+    ],
+    'sql'                   => "varchar(255) NOT NULL default ''",
+];
 
 
 
@@ -401,6 +417,7 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
         ->addField('cbsd_margin', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
         ->addField('cbsd_padding', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
         ->addField('cbsd_headline', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+        ->addField('cbsd_headline_class', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
         ->applyToPalette('headline', 'tl_content');
 
 

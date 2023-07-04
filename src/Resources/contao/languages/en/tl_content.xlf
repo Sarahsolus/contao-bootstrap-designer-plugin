@@ -107,6 +107,12 @@
       <trans-unit id="tl_content.cbsd_image_responsive.1">
         <source></source>
       </trans-unit>
+      <trans-unit id="tl_content.cbsd_headline_class.0">
+        <source>Overwrite headline properties with H-class</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_headline_class.1">
+        <source></source>
+      </trans-unit>
       <trans-unit id="tl_content.standard">
         <source>Standard</source>
       </trans-unit>

@@ -112,6 +112,11 @@ class HookListener
                     }
             }
         }
+        if ($object->cbsd_headline_class) {
+            $cbsd_headline_class = $object->cbsd_headline_class;
+            $classes.= $cbsd_headline_class.' ';
+        }
+
 
         // Content Button Properties
         if ($object->cbsd_button) {

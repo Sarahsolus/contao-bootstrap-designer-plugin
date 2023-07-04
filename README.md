@@ -1,16 +1,17 @@
 # Contao Bootstrap Designer Bundle for Contao 4
 
 The Contao Bootstrap Designer Bundle for Contao 4 adds Frontend Styling functionality to the Contao 4 Backend.
-It aims for Web developers & Online agencies who want to safe time, and Backend Users who need to do (responsive) Styling. 
+It aims for Web developers & Online agencies who'd like to safe time, and Backend Users who want to do (responsive) styling. 
 
 In addition to the Bootstrap classes, it also offers its own classes, as well as classes that can be customized in your own CSS.
 
 Features:
-- easily selectable settings for margin, padding, display adjustable for all Bootstrap viewports
-- easily selectable text and background color settings including transparency, as well as other text settings
-- quickly selectable settings for responsive behavior of images
+- settings for margin, padding, display adjustable for all Bootstrap viewports
+- text and background color settings including transparency, as well as other text settings
+- special headline settings
+- settings for responsive behavior of images
 - simply turn a Hyperlink into a Bootstrap button
-- quickly selectable container or container fluid settings for items
+- container or container fluid settings for articles
 - default responsive behavior and article container settings
 
 ## Installation
@@ -31,6 +32,7 @@ There will be new Settings in the Contao Backend:
 - each element has a Design section
 - each image element has a new responsive setting
 - each hyperlink and Top-Link element has a new button setting
+- each headline element has an additional setting to change h-class
 - in the article settings under layout there is a new container setting
 - in the Contao settings - Backend setting there are new settings for default settings
 
@@ -64,15 +66,14 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 
 ## Notes
 
-- due to Contaos link element structure I had to cheat myself around with own styling classes. 
+- due to Contaos link element structure I had to cheat myself around with own styling classes for links. 
 - 
 
 
 ##To Do
 
-- Element Eigenschaften Border, Rounded, Shadow
-- Bootstrap 5 Ready ?
-- 
+- element properties: Border, Rounded, Shadow
+- add Bootstrap 5 support
 
 
 
