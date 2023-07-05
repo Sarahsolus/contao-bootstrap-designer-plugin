@@ -267,7 +267,7 @@
         <source>Headline</source>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_element.0">
-        <source>Properties of content element</source>
+        <source>Other properties of content element</source>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_element.1">
         <source></source>
@@ -278,6 +278,15 @@
        <trans-unit id="tl_content.cbsd_element_value">
          <source>Property</source>
        </trans-unit>
+      <trans-unit id="tl_content.rounded">
+        <source>Rounded Corners</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-shadow-dark">
+        <source>Dark Shadow</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-kenburns-img">
+        <source>Ken Burns Image Hoover</source>
+      </trans-unit>
       <trans-unit id="tl_content.cbsd_button.0">
         <source>Display link as a button</source>
       </trans-unit>

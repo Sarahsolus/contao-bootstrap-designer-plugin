@@ -14,27 +14,6 @@
 .cbsd-hl-brand-primary h1,.cbsd-hl-brand-primary h2,.cbsd-hl-brand-primary h3,.cbsd-hl-brand-primary h4,.cbsd-hl-brand-primary h5,.cbsd-hl-brand-primary h6 {}
 .cbsd-hl-brand-secondary h1,.cbsd-hl-brand-secondary h2,.cbsd-hl-brand-secondary h3,.cbsd-hl-brand-secondary h4,.cbsd-hl-brand-secondary h5,.cbsd-hl-brand-secondary h6 {}
 
-/* element classes */
-
-.cbsd-element-border-black {
-    border:1px solid black;
-}
-
-.cbsd-element-border-grey {
-    border:1px solid grey;
-}
-
-.cbsd-element-rounded {
-    border-radius: 1rem;
-}
-
-.cbsd-element-shadow {
-    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
-    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
-}
-
-
 /* text classes */
 
 .cbsd-text-white, .cbsd-text-white p {color: #ffffff !important;}
@@ -144,11 +123,11 @@
 .cbsd-bg-opacity-cyan {background-color: rgba(0,255,255,0.5) !important;}
 
 /* Button Special Class*/
-.cbsd_btn {
+.cbsd-btn {
     padding: 0 !important;
 }
 
-.cbsd_btn a {
+.cbsd-btn a {
     display: block;
     padding: .375rem .75rem;
     text-decoration: none !important;
@@ -156,56 +135,76 @@
     transition: color .15s ease-in-out;
 }
 
-.cbsd_btn.btn-light a, .cbsd_btn.btn-warning a {
+.cbsd-btn.btn-light a, .cbsd-btn.btn-warning a {
     color: #212529;
 }
 
-.cbsd_btn.btn-outline-success a { color: #28a745; }
-.cbsd_btn.btn-outline-primary a { color: #007bff; }
-.cbsd_btn.btn-outline-secondary a { color: #6c757d; }
-.cbsd_btn.btn-outline-danger a { color: #dc3545; }
-.cbsd_btn.btn-outline-warning a { color: #ffc107; }
-.cbsd_btn.btn-outline-info a { color: #17a2b8; }
-.cbsd_btn.btn-outline-dark a { color: #343a40; }
-.cbsd_btn.btn-outline-light a { color: #f8f9fa; }
+.cbsd-btn.btn-outline-success a { color: #28a745; }
+.cbsd-btn.btn-outline-primary a { color: #007bff; }
+.cbsd-btn.btn-outline-secondary a { color: #6c757d; }
+.cbsd-btn.btn-outline-danger a { color: #dc3545; }
+.cbsd-btn.btn-outline-warning a { color: #ffc107; }
+.cbsd-btn.btn-outline-info a { color: #17a2b8; }
+.cbsd-btn.btn-outline-dark a { color: #343a40; }
+.cbsd-btn.btn-outline-light a { color: #f8f9fa; }
 
-.cbsd_btn.btn-outline-success:hover a, .cbsd_btn.btn-outline-primary:hover a, .cbsd_btn.btn-outline-secondary a:hover, .cbsd_btn.btn-outline-danger a:hover, .cbsd_btn.btn-outline-warning:hover a, .cbsd_btn.btn-outline-info:hover a, .cbsd_btn.btn-outline-dark:hover a { color: #ffffff; }
-.cbsd_btn.btn-outline-light:hover a { color: #212529; }
+.cbsd-btn.btn-outline-success:hover a, .cbsd-btn.btn-outline-primary:hover a, .cbsd-btn.btn-outline-secondary a:hover, .cbsd-btn.btn-outline-danger a:hover, .cbsd-btn.btn-outline-warning:hover a, .cbsd-btn.btn-outline-info:hover a, .cbsd-btn.btn-outline-dark:hover a { color: #ffffff; }
+.cbsd-btn.btn-outline-light:hover a { color: #212529; }
 
 
 /* media responsive classes */
 
-.always-responsive img, .always-responsive video {
+.cbsd-always-responsive img, .cbsd-always-responsive video {
     width: 100%;
     height: auto;
 }
 
-.always-responsive-tablet img, .always-responsive-tablet video {
+.cbsd-always-responsive-tablet img, .cbsd-always-responsive-tablet video {
     width: 100%;
     height: auto;
 }
 @media (min-width: 992px) {
-  .always-responsive-tablet img, .always-responsive-tablet video {
+  .cbsd-always-responsive-tablet img, .cbsd-always-responsive-tablet video {
     width: initial;
     max-width: 100%;
   }
 }
 
-.always-responsive-desktop img, .always-responsive-desktop video {
+.cbsd-always-responsive-desktop img, .cbsd-always-responsive-desktop video {
   width: 100%;
   height: auto;
 }
 @media (min-width: 1200px) {
-  .always-responsive-desktop img, .always-responsive-desktop video {
+  .cbsd-always-responsive-desktop img, .cbsd-always-responsive-desktop video {
     width: initial;
     max-width: 100%;
   }
 }
 
-.no-responsive, .no-responsive img, .no-responsive video {
+.cbsd-no-responsive, .cbsd-no-responsive img, .cbsd-no-responsive video {
   width: initial;
   max-width: initial;
   height: initial;
 }
+
+/* element classes */
+.cbsd-shadow-dark {
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+}
+
+.cbsd-kenburns-img figure { overflow: hidden; display: block; position: relative; }
+.cbsd-kenburns-img figure img { transition: all 3s; }
+.cbsd-kenburns-img figure img:hover { transform: scale(1.3); }
+
+
+
+
+
+
+
+
+
 
 

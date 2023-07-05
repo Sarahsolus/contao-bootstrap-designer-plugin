@@ -32,6 +32,8 @@ $headline_class_options = ['h1','h2','h3','h4','h5','h6'];
 
 $text_type_options = ['cbsd-text','cbsd-link','cbsd-hl'];
 
+$element_value_options = ['shadow','cbsd-shadow-dark','rounded','cbsd-kenburns-img'];
+
 $image_responsive_options = ['standard','always-responsive','always-responsive-desktop','always-responsive-tablet','no-responsive'];
 
 $button_value_options = ['btn-primary','btn-secondary','btn-success','btn-danger','btn-warning','btn-info','btn-light','btn-dark'];
@@ -244,7 +246,7 @@ $GLOBALS['TL_DCA'][$strName]['fields']['cbsd_text'] = [
     'inputType' => 'multiColumnWizard',
     'exclude' => true,
     'eval' => [
-        'tl_class'=>'w50 clr',
+        'tl_class'=>'w50',
         'columnFields' => [
             'cbsd_text_type' => [
                 'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_text_type'],
@@ -269,6 +271,33 @@ $GLOBALS['TL_DCA'][$strName]['fields']['cbsd_text'] = [
                 'eval' => [
                     'exclude' => true,
                     'style' => 'width:160px',
+                    'maxlength' => 255,
+                    'includeBlankOption' => true,
+                    'chosen' => true
+                ],
+            ],
+        ],
+        'disableSorting' => true,
+    ],
+    'sql' => "blob NULL",
+];
+
+
+$GLOBALS['TL_DCA'][$strName]['fields']['cbsd_element'] = [
+    'inputType' => 'multiColumnWizard',
+    'exclude' => true,
+    'eval' => [
+        'tl_class'=>'w50',
+        'columnFields' => [
+            'cbsd_element_value' => [
+                'label' => &$GLOBALS['TL_LANG'][$strName]['cbsd_element_value'],
+                'exclude' => true,
+                'inputType' => 'select',
+                'options' => $element_value_options,
+                'reference' => &$GLOBALS['TL_LANG']['tl_content'],
+                'eval' => [
+                    'exclude' => true,
+                    'style' => 'width:260px',
                     'maxlength' => 255,
                     'includeBlankOption' => true,
                     'chosen' => true
@@ -405,6 +434,7 @@ $GLOBALS['TL_DCA']['tl_content']['config']['onload_callback'][] = function (Data
                 ->addField('cbsd_margin', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('cbsd_padding', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->addField('cbsd_text', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
+                ->addField('cbsd_element', 'cbsd_design_legend', PaletteManipulator::POSITION_APPEND)
                 ->applyToPalette($key, $dc->table);
         }
     }

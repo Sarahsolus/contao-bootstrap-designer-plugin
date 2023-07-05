@@ -355,21 +355,33 @@
         <target>Überschrift</target>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_element.0">
-        <source>Properties of content element</source>
-        <target>Eigenschaften des Inhaltselements</target>
+        <source>Other properties of content element</source>
+        <target>Sonstige Eigenschaften des Inhaltselements</target>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_element.1">
         <source></source>
         <target></target>
       </trans-unit>
-       <trans-unit id="tl_content.cbsd_element_type">
-         <source>Type</source>
-         <target>Typ</target>
-       </trans-unit>
-       <trans-unit id="tl_content.cbsd_element_value">
-         <source>Property</source>
-         <target>Eigenschaften</target>
-       </trans-unit>
+      <trans-unit id="tl_content.cbsd_element_type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd_element_value">
+        <source>Property</source>
+        <target>Eigenschaften</target>
+      </trans-unit>
+      <trans-unit id="tl_content.rounded">
+        <source>Rounded Corners</source>
+        <target>Abgerundete Ecken</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-shadow-dark">
+        <source>Dark Shadow</source>
+        <target>Dunkler Schatten</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-kenburns-img">
+        <source>Ken Burns Image Hoover</source>
+        <target>Ken Burns Bild Hoover</target>
+      </trans-unit>
       <trans-unit id="tl_content.cbsd_button.0">
         <source>Display link as a button</source>
         <target>Link als Button darstellen</target>

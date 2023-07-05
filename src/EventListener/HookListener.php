@@ -103,6 +103,16 @@ class HookListener
             }
         }
 
+        // Content Element Properties
+        if ($object->cbsd_element) {
+            $cbsd_element = unserialize($object->cbsd_element,['']);
+            foreach ($cbsd_element as $cbsd_element_row) {
+                    if ($cbsd_element_row['cbsd_element_value']) {
+                        $classes.= $cbsd_element_row['cbsd_element_value'].' ';
+                    }
+            }
+        }
+
         // Content Headline Properties
         if ($object->cbsd_headline) {
             $cbsd_headline = unserialize($object->cbsd_headline,['']);
@@ -123,7 +133,7 @@ class HookListener
             $cbsd_button = unserialize($object->cbsd_button,['']);
             foreach ($cbsd_button as $cbsd_button_row) {
                 if ($cbsd_button_row['cbsd_button_type']) {
-                    $cbsd_button_class = 'cbsd_btn btn btn-';
+                    $cbsd_button_class = 'cbsd-btn btn btn-';
                     if ($cbsd_button_row['cbsd_button_outline']) {
                         $cbsd_button_class .= 'outline-';
                     }
@@ -138,7 +148,7 @@ class HookListener
         if ($object->cbsd_image_responsive) {
             $cbsd_image_responsive = $object->cbsd_image_responsive;
             if ($cbsd_image_responsive != 'standard') {
-                $classes.= $cbsd_image_responsive;
+                $classes.= 'cbsd-'.$cbsd_image_responsive;
             }
         }
 

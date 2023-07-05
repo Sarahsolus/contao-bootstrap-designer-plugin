@@ -31,16 +31,12 @@ There will be new Settings in the Contao Backend:
 
 - each element has a Design section
 - each image element has a new responsive setting
-- each hyperlink and Top-Link element has a new button setting
+- each hyperlink and Top-Link element has a new button setting in the Hyperlink Settings area
 - each headline element has an additional setting to change h-class
 - in the article settings under layout there is a new container setting
 - in the Contao settings - Backend setting there are new settings for default settings
 
-
 Before creating new articles, change the default container class settings.
-
-
-
 
 You can add
 
@@ -67,12 +63,10 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 ## Notes
 
 - due to Contaos link element structure I had to cheat myself around with own styling classes for links. 
-- 
+-  
 
 
-##To Do
-
-- element properties: Border, Rounded, Shadow
+## Future Plans
 - add Bootstrap 5 support
 
 
