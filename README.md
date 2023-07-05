@@ -62,8 +62,7 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 
 ## Notes
 
-- due to Contaos link element structure I had to cheat myself around with own styling classes for links. 
--  
+- due to Contaos link element structure some own classes concerning the hyperlinks had to be added.
 
 
 ## Future Plans

@@ -285,7 +285,16 @@
         <source>Dark Shadow</source>
       </trans-unit>
       <trans-unit id="tl_content.cbsd-kenburns-img">
-        <source>Ken Burns Image Hoover</source>
+        <source>Ken Burns Image Hover FX</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-list-arrow-blue">
+        <source>Listing symbol blue arrow</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-list-checked-green">
+        <source>Listing symbol green checkmark</source>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-list-star-gold">
+        <source>Listing symbol golden star</source>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_button.0">
         <source>Display link as a button</source>
