@@ -37,6 +37,28 @@ There will be new Settings in the Contao Backend:
 - in the Contao settings - Backend setting there are new settings for default settings
 
 Before creating new articles, change the default container class settings.
+If you are using the Contao Bootstrap extension, REMOVE ANY CLASS from the container class settings in the layout section,
+or the containerfluid settings for the articles won't work.
+
+---
+
+German / Deutsche Anleitung:
+
+Die Erweiterung ermöglicht neue Einstellungen im Contao Backend:
+
+- jedes Element hat einen neuen Abschnitt "Design"
+- jedes Bildelement hat eine neue Einstellmöglichkeit für die Responsive Darstellung
+- jeder Hyperlink / Top-Link hat in den Hyperlink-Einstellungen die Option, den Link in einen Button zu ändern
+- Jedes Überschrift Element hat unter Design die Option, die h-Klasse des Element zu ändern
+- in den Artikeleinstellungen unter Layout gibt es die Möglichkeit, den Inhalt des Artikels in einen Container setzen
+- in den Contao Einstellungen - Backend Einstellungen gibt es neue Optionen für Voreinstellungen
+
+Bevor man die Seitenstruktur beginnt einzurichten, sollte man die Voreinstellung für die Container Klasse auswählen.
+So erhält jeder neue Artikel z.B. automatisch die Container-Klasse.
+Wird die Contao Bootstrap verwendet, bitte das Feld Container-Klasse in den Layout-Einstellungen freilassen, damit die Container-Fluid Einstellung funktionieren kann.
+
+
+---
 
 You can add
 
@@ -59,6 +81,9 @@ You can add
 to your SCSS to define primary and secondary brand colors.
 
 There are also three unused special classes (s1,s2,s3) you can use for your special margin / padding values.
+
+---
+
 
 ## Notes
 

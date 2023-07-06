@@ -203,6 +203,11 @@
 .cbsd-list-star-gold li::marker { content: "★ "; color: #ffc107; }
 
 
+/* layout */
+.cbsd-container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 
 

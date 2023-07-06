@@ -18,6 +18,238 @@
          <source>Full width (container-fluid)</source>
          <target>Über die ganze Breite (container-fluid)</target>
        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin.0">
+            <source>Margin</source>
+            <target>Außenabstand</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin.1">
+            <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
+            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin_type">
+            <source>Margin type</source>
+            <target>Art des Außenabstands</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin_viewport">
+            <source>Viewport</source>
+            <target>Displaygröße</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin_value">
+            <source>Value</source>
+            <target>Wert</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding.0">
+            <source>Padding</source>
+            <target>Innenabstand</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding.1">
+            <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
+            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding_type">
+            <source>Padding type</source>
+            <target>Art des Innenabstands</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding_viewport">
+            <source>Viewport</source>
+            <target>Displaygröße</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding_value">
+            <source>Value</source>
+            <target>Wert</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_display.0">
+            <source>Display</source>
+            <target>Darstellung</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_display.1">
+            <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
+            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_display_type">
+            <source>Display type</source>
+            <target>Art der Darstellung</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_display_viewport">
+            <source>Viewport</source>
+            <target>Displaygröße</target>
+        </trans-unit>
+        <trans-unit id="tl_article.none">
+            <source>Hide (None)</source>
+            <target>Ausblenden (None)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.block">
+            <source>Show (Block)</source>
+            <target>Anzeigen (Block)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor.0">
+            <source>Background Color</source>
+            <target>Hintergrundfarbe</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor.1">
+            <source>Background color of element</source>
+            <target>Hintergrundfarbe des Elements</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd-bg">
+            <source>Background Color</source>
+            <target>Hintergrundfarbe</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor_type">
+            <source>Background color</source>
+            <target>Hintergrundfarbe</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor_property">
+            <source>Transparency</source>
+            <target>Transparenz</target>
+        </trans-unit>
+        <trans-unit id="tl_article.transparent">
+            <source>None (transparent)</source>
+            <target>Keine (transparent)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.opacity">
+            <source>Transparent</source>
+            <target>Transparent</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor_value">
+            <source>Color</source>
+            <target>Farbe</target>
+        </trans-unit>
+        <trans-unit id="tl_article.sm">
+            <source>sm (Mobile)</source>
+            <target>sm (Handy)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.md">
+            <source>md (Tablet)</source>
+            <target>md (Tablet)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.lg">
+            <source>lg (Desktop)</source>
+            <target>lg (Desktop)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.xl">
+            <source>xl (Desktop HD)</source>
+            <target>xl (Desktop HD)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.xxl">
+            <source>xxl (Desktop UHD)</source>
+            <target>xxl (Desktop UHD)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.brand-primary">
+            <source>Brand-Primary</source>
+            <target>Brand-Primary</target>
+        </trans-unit>
+        <trans-unit id="tl_article.brand-secondary">
+            <source>Brand-Secondary</source>
+            <target>Brand-Secondary</target>
+        </trans-unit>
+        <trans-unit id="tl_article.background">
+            <source>Background (Body)</source>
+            <target>Hintergrund (Body)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.white">
+            <source>White</source>
+            <target>Weiß</target>
+        </trans-unit>
+        <trans-unit id="tl_article.black">
+            <source>Black</source>
+            <target>Schwarz</target>
+        </trans-unit>
+        <trans-unit id="tl_article.grey">
+            <source>Grey</source>
+            <target>Grau</target>
+        </trans-unit>
+        <trans-unit id="tl_article.red">
+            <source>Red</source>
+            <target>Rot</target>
+        </trans-unit>
+        <trans-unit id="tl_article.yellow">
+            <source>Yellow</source>
+            <target>Gelb</target>
+        </trans-unit>
+        <trans-unit id="tl_article.green">
+            <source>Green</source>
+            <target>Grün</target>
+        </trans-unit>
+        <trans-unit id="tl_article.blue">
+            <source>Blue</source>
+            <target>Blau</target>
+        </trans-unit>
+        <trans-unit id="tl_article.orange">
+            <source>Orange</source>
+            <target>Orange</target>
+        </trans-unit>
+        <trans-unit id="tl_article.brown">
+            <source>Brown</source>
+            <target>Braun</target>
+        </trans-unit>
+        <trans-unit id="tl_article.pink">
+            <source>Pink</source>
+            <target>Pink</target>
+        </trans-unit>
+        <trans-unit id="tl_article.violet">
+            <source>Violet</source>
+            <target>Violett</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cyan">
+            <source>Cyan</source>
+            <target>Cyan</target>
+        </trans-unit>
+        <trans-unit id="tl_article.m">
+            <source>Margin all sides (m)</source>
+            <target>Außenabstand allseitig (m)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.mt">
+            <source>Margin Top (mt)</source>
+            <target>Außenabstand oben (mt)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.mr">
+            <source>Margin Right (mr)</source>
+            <target>Außenabstand rechts (mr)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.mb">
+            <source>Margin Bottom (mb)</source>
+            <target>Außenabstand unten (mb)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.ml">
+            <source>Margin Left (ml)</source>
+            <target>Außenabstand links (ml)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.me">
+            <source>Margin Right (me)</source>
+            <target>Außenabstand rechts (me)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.ms">
+            <source>Margin Left (ms)</source>
+            <target>Außenabstand links (ms)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.p">
+            <source>Padding all sides (p)</source>
+            <target>Innenabstand allseitig (p)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.pt">
+            <source>Padding Top (pt)</source>
+            <target>Innenabstand oben (pt)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.pr">
+            <source>Padding Right (pr)</source>
+            <target>Innenabstand rechts (pr)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.pb">
+            <source>Padding Bottom (pb)</source>
+            <target>Innenabstand unten (pb)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.pl">
+            <source>Padding Left (pl)</source>
+            <target>Innenabstand links (pl)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.pe">
+            <source>Padding Right (pe)</source>
+            <target>Innenabstand rechts (pe)</target>
+        </trans-unit>
+        <trans-unit id="tl_article.ps">
+            <source>Padding Left (ps)</source>
+            <target>Innenabstand links (ps)</target>
+        </trans-unit>        
     </body>
   </file>
 </xliff>

@@ -14,6 +14,180 @@
        <trans-unit id="tl_article.container-fluid">
          <source>Full width (container-fluid)</source>
        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin.0">
+            <source>Margin</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin.1">
+            <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin_type">
+            <source>Margin type</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin_viewport">
+            <source>Viewport</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_margin_value">
+            <source>Value</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding.0">
+            <source>Padding</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding.1">
+            <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding_type">
+            <source>Padding type</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding_viewport">
+            <source>Viewport</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_padding_value">
+            <source>Value</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_display.0">
+            <source>Display</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_display.1">
+            <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_display_type">
+            <source>Display type</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_display_viewport">
+            <source>Viewport</source>
+        </trans-unit>
+        <trans-unit id="tl_article.none">
+            <source>Hide (None)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.block">
+            <source>Show (Block)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor.0">
+            <source>Background Color</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor.1">
+            <source>Background color of element</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd-bg">
+            <source>Background Color</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor_type">
+            <source>Background color</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor_property">
+            <source>Transparency</source>
+        </trans-unit>
+        <trans-unit id="tl_article.transparent">
+            <source>None (transparent)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.opacity">
+            <source>Transparent</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_bgcolor_value">
+            <source>Color</source>
+        </trans-unit>
+        <trans-unit id="tl_article.sm">
+            <source>sm (Mobile)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.md">
+            <source>md (Tablet)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.lg">
+            <source>lg (Desktop)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.xl">
+            <source>xl (Desktop HD)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.xxl">
+            <source>xxl (Desktop UHD)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.brand-primary">
+            <source>Brand-Primary</source>
+        </trans-unit>
+        <trans-unit id="tl_article.brand-secondary">
+            <source>Brand-Secondary</source>
+        </trans-unit>
+        <trans-unit id="tl_article.background">
+            <source>Background (Body)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.white">
+            <source>White</source>
+        </trans-unit>
+        <trans-unit id="tl_article.black">
+            <source>Black</source>
+        </trans-unit>
+        <trans-unit id="tl_article.grey">
+            <source>Grey</source>
+        </trans-unit>
+        <trans-unit id="tl_article.red">
+            <source>Red</source>
+        </trans-unit>
+        <trans-unit id="tl_article.yellow">
+            <source>Yellow</source>
+        </trans-unit>
+        <trans-unit id="tl_article.green">
+            <source>Green</source>
+        </trans-unit>
+        <trans-unit id="tl_article.blue">
+            <source>Blue</source>
+        </trans-unit>
+        <trans-unit id="tl_article.orange">
+            <source>Orange</source>
+        </trans-unit>
+        <trans-unit id="tl_article.brown">
+            <source>Brown</source>
+        </trans-unit>
+        <trans-unit id="tl_article.pink">
+            <source>Pink</source>
+        </trans-unit>
+        <trans-unit id="tl_article.violet">
+            <source>Violet</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cyan">
+            <source>Cyan</source>
+        </trans-unit>
+        <trans-unit id="tl_article.m">
+            <source>Margin all sides (m)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.mt">
+            <source>Margin Top (mt)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.mr">
+            <source>Margin Right (mr)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.mb">
+            <source>Margin Bottom (mb)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.ml">
+            <source>Margin Left (ml)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.me">
+            <source>Margin Right (me)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.ms">
+            <source>Margin Left (ms)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.p">
+            <source>Padding all sides (p)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.pt">
+            <source>Padding Top (pt)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.pr">
+            <source>Padding Right (pr)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.pb">
+            <source>Padding Bottom (pb)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.pl">
+            <source>Padding Left (pl)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.pe">
+            <source>Padding Right (pe)</source>
+        </trans-unit>
+        <trans-unit id="tl_article.ps">
+            <source>Padding Left (ps)</source>
+        </trans-unit>
     </body>
   </file>
 </xliff>

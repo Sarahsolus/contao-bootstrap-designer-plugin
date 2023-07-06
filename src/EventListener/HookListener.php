@@ -176,6 +176,68 @@ class HookListener
         if ($objTemplate->getName() == 'mod_article') {
             $temp_obj = $objTemplate->getData();
 
+            // Design
+            if ($temp_obj['cbsd_display']) {
+                $classes = ' ';
+                $cbsd_display = unserialize($temp_obj['cbsd_display'],['']);
+                foreach ($cbsd_display as $cbsd_display_row) {
+                    if ($cbsd_display_row['cbsd_display_type']) {
+                        $classes .= 'd-';
+                        if ($cbsd_display_row['cbsd_display_viewport']) {
+                            $classes.= $cbsd_display_row['cbsd_display_viewport'].'-';
+                        }
+                        $classes .= $cbsd_display_row['cbsd_display_type'].' ';
+                    }
+                }
+                $temp_obj['class'] .= $classes;
+            }
+
+            if ($temp_obj['cbsd_bgcolor']) {
+                $classes = ' ';
+                $cbsd_bgcolor = unserialize($temp_obj['cbsd_bgcolor'],['']);
+                foreach ($cbsd_bgcolor as $cbsd_bgcolor_row) {
+                    if ($cbsd_bgcolor_row['cbsd_bgcolor_type'] && $cbsd_bgcolor_row['cbsd_bgcolor_value']) {
+                        $classes.= $cbsd_bgcolor_row['cbsd_bgcolor_type'].'-';
+                        if ($cbsd_bgcolor_row['cbsd_bgcolor_property']) {
+                            $classes.= $cbsd_bgcolor_row['cbsd_bgcolor_property'].'-';
+                        }
+                        $classes.= $cbsd_bgcolor_row['cbsd_bgcolor_value'].' ';
+                    }
+                }
+                $temp_obj['class'] .= $classes;
+            }
+
+            if ($temp_obj['cbsd_margin']) {
+                $classes = ' ';
+                $cbsd_margin = unserialize($temp_obj['cbsd_margin'],['']);
+                foreach ($cbsd_margin as $cbsd_margin_row) {
+                    if ($cbsd_margin_row['cbsd_margin_type'] && ($cbsd_margin_row['cbsd_margin_value'] || $cbsd_margin_row['cbsd_margin_value']==0) ) {
+                        $classes.= $cbsd_margin_row['cbsd_margin_type'].'-';
+                        if ($cbsd_margin_row['cbsd_margin_viewport']) {
+                            $classes.= $cbsd_margin_row['cbsd_margin_viewport'].'-';
+                        }
+                        $classes.= $cbsd_margin_row['cbsd_margin_value'].' ';
+                    }
+                }
+                $temp_obj['class'] .= $classes;
+            }
+
+            if ($temp_obj['cbsd_padding']) {
+                $classes = ' ';
+                $cbsd_padding = unserialize($temp_obj['cbsd_padding'],['']);
+                foreach ($cbsd_padding as $cbsd_padding_row) {
+                    if ($cbsd_padding_row['cbsd_padding_type'] && ($cbsd_padding_row['cbsd_padding_value'] || $cbsd_padding_row['cbsd_padding_value']==0) ) {
+                        $classes.= $cbsd_padding_row['cbsd_padding_type'].'-';
+                        if ($cbsd_padding_row['cbsd_padding_viewport']) {
+                            $classes.= $cbsd_padding_row['cbsd_padding_viewport'].'-';
+                        }
+                        $classes.= $cbsd_padding_row['cbsd_padding_value'].' ';
+                    }
+                }
+                $temp_obj['class'] .= $classes;
+            }
+            // Design End
+
             if (!empty($temp_obj['cbsd_article_container'])) {
                 $class_obj= '';
                 if ($temp_obj['cbsd_article_container'] == 'container') {
