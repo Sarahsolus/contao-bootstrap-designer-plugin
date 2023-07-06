@@ -2,19 +2,14 @@
     "name": "sarahsolus/contaobsdesigner",
     "version": "1.0.0",
     "description": "Contao 4 Bootstrap Designer Bundle",
+    "keywords":["contao", "bootstrap", "theme"],
     "license": "LGPL-3.0-or-later",
     "type": "contao-bundle",
     "authors": [
         {
-            "name": "Leo Feyer",
-            "homepage": "https://github.com/leofeyer"
-        },
-        {
-            "name": "Thomas Richter",
-            "homepage": "https://contao.org/contributors"
+            "name": "Thomas Richter"
         }
     ],
-    "homepage": "https://contao.org",
     "support": {
         "issues": "",
         "source": ""
@@ -27,6 +22,9 @@
     "require-dev": {
     },
     "conflict": {
+    },
+    "suggest": {
+        "contao-bootstrap/bundle": "Adds Bootstrap functionality to Contao"
     },
     "autoload": {
         "psr-4": {
