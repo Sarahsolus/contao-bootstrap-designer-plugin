@@ -3,16 +3,38 @@
 The Contao Bootstrap Designer Bundle for Contao 4 adds Frontend Styling functionality to the Contao 4 Backend.
 It aims for Web developers & Online agencies who'd like to safe time, and Backend Users who want to do (responsive) styling. 
 
-In addition to the Bootstrap classes, it also offers its own classes, as well as classes that can be customized in your own CSS.
+In addition to the Bootstrap classes, it also offers many own classes, as well as classes that can be customized in your own CSS.
 
 Features:
-- settings for margin, padding, display adjustable for all Bootstrap viewports
+- responsive settings for margin, padding and display for all elements and articles
 - text and background color settings including transparency, as well as other text settings
 - special headline settings
 - settings for responsive behavior of images
 - simply turn a Hyperlink into a Bootstrap button
 - container or container fluid settings for articles
-- default responsive behavior and article container settings
+- default responsive image behavior and article container settings
+- ALL FEATURES UNSELECTED BY DEFAULT (default Contao behaviour is preserved)
+
+---
+
+German / Deutsche Beschreibung:
+
+Das Contao Bootstrap Designer Bundle fügt dem Backend von Contao 4 (responsive) Frontend Styling Funktionalität hinzu.
+Zielgruppe sind Webentwickler und Online Agenturen, die Zeit beim Erstellen und Pflegen der Seite sparen wollen,
+sowie Backendbenutzer, die mehr Kontrolle über das responsive Verhalten der Artikel und Elemente erlangen wollen.
+
+Neben der Zurverfügungstellung von Bootstrapklassen, liefert der Designer auch viele eigene Klassen, sowie Klassen zur eigenen Anpassung.
+
+Features:
+- responsive Einstellungen für Außen-, Innenabstand und Anzeige für alle Elemente und Artikel
+- Einstellungen für Text- und Hintergrundfarbe, Transparenz, und weitere nützliche Texteinstellungen
+- spezielle Überschrift-Einstellungen
+- Einstellungen für das Responsive Verhalten von Bildern
+- Einfache Möglichkeit einen Link in einen Button zu ändern
+- Container und Container-Fluid Einstellungen für Artikel
+- Grundeinstellungen für responsives Verhalten der Bilder und Artikel Container
+- ALLE FEATURES STANDARDMÄßIG ABGEWÄHLT (Standardverhalten von Contao bleibt erhalten)
+
 
 ## Installation
 
@@ -58,7 +80,7 @@ So erhält jeder neue Artikel z.B. automatisch die Container-Klasse.
 Wird die Contao Bootstrap verwendet, bitte das Feld Container-Klasse in den Layout-Einstellungen freilassen, damit die Container-Fluid Einstellung funktionieren kann.
 
 
----
+## Expand with own styling
 
 You can add
 
@@ -83,7 +105,6 @@ to your SCSS to define primary and secondary brand colors.
 There are also three unused special classes (s1,s2,s3) you can use for your special margin / padding values.
 
 ---
-
 
 ## Notes
 

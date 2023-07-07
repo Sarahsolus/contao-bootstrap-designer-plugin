@@ -1,7 +1,7 @@
 {
     "name": "sarahsolus/contaobsdesigner",
     "version": "1.0.0",
-    "description": "Contao 4 Bootstrap Designer Bundle",
+    "description": "Responsive Bootstrap Design Functionality for Contao 4 Backend",
     "keywords":["contao", "bootstrap", "theme"],
     "license": "LGPL-3.0-or-later",
     "type": "contao-bundle",
