@@ -7,7 +7,7 @@
         <target>Containerklasse</target>
       </trans-unit>
       <trans-unit id="tl_article.cbsd_article_container.1">
-        <source>Places the articles content in a container</source>
+        <source>Place the articles content in a container</source>
         <target>Setzt den Inhalt des Artikels in einen Container</target>
       </trans-unit>
        <trans-unit id="tl_article.container">
@@ -18,13 +18,49 @@
          <source>Full width (container-fluid)</source>
          <target>Über die ganze Breite (container-fluid)</target>
        </trans-unit>
+        <trans-unit id="tl_article.cbsd_article_height.0">
+            <source>Minimum article height</source>
+            <target>Minimale Artikelhöhe</target>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_article_height.1">
+            <source>Relative to current Viewport height</source>
+            <target>Relativ zur aktuellen Bildschirmhöhe</target>
+        </trans-unit>
+        <trans-unit id="tl_article.height-10vh.0">
+            <source>10%</source>
+            <target>10%</target>
+        </trans-unit>
+        <trans-unit id="tl_article.height-20vh.0">
+            <source>20%</source>
+            <target>20%</target>
+        </trans-unit>
+        <trans-unit id="tl_article.height-25vh.0">
+            <source>25%</source>
+            <target>25%</target>
+        </trans-unit>
+        <trans-unit id="tl_article.height-33vh.0">
+            <source>33%</source>
+            <target>33%</target>
+        </trans-unit>
+        <trans-unit id="tl_article.height-50vh.0">
+            <source>50%</source>
+            <target>50%</target>
+        </trans-unit>
+        <trans-unit id="tl_article.height-75vh.0">
+            <source>75%</source>
+            <target>75%</target>
+        </trans-unit>
+        <trans-unit id="tl_article.height-100vh.0">
+            <source>100%</source>
+            <target>100%</target>
+        </trans-unit>
         <trans-unit id="tl_article.cbsd_margin.0">
             <source>Margin</source>
             <target>Außenabstand</target>
         </trans-unit>
         <trans-unit id="tl_article.cbsd_margin.1">
             <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
-            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf aufsteigenden Größen</target>
         </trans-unit>
         <trans-unit id="tl_article.cbsd_margin_type">
             <source>Margin type</source>
@@ -44,7 +80,7 @@
         </trans-unit>
         <trans-unit id="tl_article.cbsd_padding.1">
             <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
-            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf aufsteigenden Größen</target>
         </trans-unit>
         <trans-unit id="tl_article.cbsd_padding_type">
             <source>Padding type</source>
@@ -64,7 +100,7 @@
         </trans-unit>
         <trans-unit id="tl_article.cbsd_display.1">
             <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
-            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+            <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf aufsteigenden Größen</target>
         </trans-unit>
         <trans-unit id="tl_article.cbsd_display_type">
             <source>Display type</source>

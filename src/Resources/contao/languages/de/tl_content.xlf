@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="tl_content.cbsd_margin.1">
         <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
-        <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+        <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf aufsteigenden Größen</target>
       </trans-unit>
        <trans-unit id="tl_content.cbsd_margin_type">
          <source>Margin type</source>
@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="tl_content.cbsd_padding.1">
         <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
-        <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+        <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf aufsteigenden Größen</target>
       </trans-unit>
        <trans-unit id="tl_content.cbsd_padding_type">
          <source>Padding type</source>
@@ -52,7 +52,7 @@
       </trans-unit>
       <trans-unit id="tl_content.cbsd_display.1">
         <source>Each display size, unless further specified, also applies to all subsequent sizes</source>
-        <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf folgenden Größen</target>
+        <target>Jede Displaygröße gilt, sofern nicht anders angegeben, auch für alle darauf aufsteigenden Größen</target>
       </trans-unit>
        <trans-unit id="tl_content.cbsd_display_type">
          <source>Display type</source>
@@ -393,6 +393,10 @@
       <trans-unit id="tl_content.cbsd-list-star-gold">
         <source>Listing symbol golden star</source>
         <target>Listensymbol Goldener Stern</target>
+      </trans-unit>
+      <trans-unit id="tl_content.cbsd-hl-abscentered">
+        <source>Absolute centered headline</source>
+        <target>Überschrift absolut zentrieren</target>
       </trans-unit>
       <trans-unit id="tl_content.cbsd_button.0">
         <source>Display link as a button</source>

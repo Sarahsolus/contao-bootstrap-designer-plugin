@@ -32,7 +32,7 @@ $headline_class_options = ['h1','h2','h3','h4','h5','h6'];
 
 $text_type_options = ['cbsd-text','cbsd-link','cbsd-hl'];
 
-$element_value_options = ['shadow','cbsd-shadow-dark','rounded','cbsd-kenburns-img','cbsd-list-arrow-blue','cbsd-list-checked-green','cbsd-list-star-gold'];
+$element_value_options = ['shadow','cbsd-shadow-dark','rounded','cbsd-kenburns-img','cbsd-list-arrow-blue','cbsd-list-checked-green','cbsd-list-star-gold','cbsd-hl-abscentered'];
 
 $image_responsive_options = ['standard','always-responsive','always-responsive-desktop','always-responsive-tablet','no-responsive'];
 

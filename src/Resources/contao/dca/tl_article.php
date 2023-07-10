@@ -27,6 +27,8 @@ $padding_type_options =  ['pt','pr','pb','pl','p'];
 $margin_value_options = ['0','1', '2', '3', '4', '5', 'auto', 's1', 's2', 's3'];
 $padding_value_options = ['0','1', '2', '3', '4', '5', 's1', 's2', 's3'];
 
+$height_value_options = ['height-100vh','height-75vh','height-50vh','height-33vh','height-25vh','height-20vh'];
+
 
 // Palettes
 $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container'] = [
@@ -37,6 +39,22 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_container'] = [
         'container',
         'container-fluid'
     ],
+    'reference' => &$GLOBALS['TL_LANG']['tl_article'],
+    'eval' => [
+        'exclude' => true,
+        'maxlength' => 255,
+        'includeBlankOption' => true,
+        'tl_class'=>'w50 clr',
+        'chosen' => true
+    ],
+    'sql' => "varchar(255) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_article_height'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_article']['cbsd_article_height'],
+    'exclude' => true,
+    'inputType' => 'select',
+    'options' => $height_value_options,
     'reference' => &$GLOBALS['TL_LANG']['tl_article'],
     'eval' => [
         'exclude' => true,
@@ -251,20 +269,15 @@ $GLOBALS['TL_DCA']['tl_article']['fields']['cbsd_padding'] = [
     'sql' => "blob NULL",
 ];
 
-
-
-
 PaletteManipulator::create()
     ->addField(['cbsd_padding'], 'inColumn', PaletteManipulator::POSITION_AFTER)
     ->addField(['cbsd_margin'], 'inColumn', PaletteManipulator::POSITION_AFTER)
     ->addField(['cbsd_bgcolor'], 'inColumn', PaletteManipulator::POSITION_AFTER)
     ->addField(['cbsd_display'], 'inColumn', PaletteManipulator::POSITION_AFTER)
+    ->addField(['cbsd_article_height'], 'inColumn', PaletteManipulator::POSITION_AFTER)
     ->addField(['cbsd_article_container'], 'inColumn', PaletteManipulator::POSITION_AFTER)
     ->applyToPalette('default', 'tl_article')
 ;
-
-
-
 
 $GLOBALS['TL_DCA']['tl_article']['config']['onload_callback'] = [['cbsd_tl_article', 'checkDefaultArticleContainer']];
 

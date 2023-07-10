@@ -114,7 +114,7 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 ## Future Plans
 - add Bootstrap 5 support
 
-
+- option_callbacks, funktionen setzen arrays zusammen
 
 
 

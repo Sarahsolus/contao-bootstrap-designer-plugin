@@ -24,10 +24,6 @@ class HookListener
      */
     private function processBuffer(string $buffer, $object): string
     {
-        // $test_array = [$object->cbsd_margin,$object->cbsd_padding,$object->cbsd_display,$object->cbsd_color,$object->cbsd_image_responsive];
-        // var_dump ($test_array);
-        // var_dump (($object->cbsd_margin || $object->cbsd_padding || $object->cbsd_display || $object->cbsd_color || $object->cbsd_image_responsive));
-
         if (TL_MODE === 'BE' || !($object->cbsd_margin || $object->cbsd_padding || $object->cbsd_display || $object->cbsd_color || $object->cbsd_text || $object->cbsd_element || $object->cbsd_headline || $object->cbsd_image_responsive)) {
             return $buffer;
         }
@@ -236,6 +232,11 @@ class HookListener
                 }
                 $temp_obj['class'] .= $classes;
             }
+
+            if ($temp_obj['cbsd_article_height']) {
+                $temp_obj['class'] .= 'cbsd-'.$temp_obj['cbsd_article_height'];
+            }
+
             // Design End
 
             if (!empty($temp_obj['cbsd_article_container'])) {
@@ -249,6 +250,7 @@ class HookListener
                 $temp_obj['elements'][] = '</div>';
                 $objTemplate->setData($temp_obj);
             }
+
         }
     }
 

@@ -187,6 +187,16 @@
   height: initial;
 }
 
+/* height classes */
+.cbsd-height-10vh {min-height: 10vh !important;}
+.cbsd-height-20vh {min-height: 20vh !important;}
+.cbsd-height-25vh {min-height: 25vh !important;}
+.cbsd-height-33vh {min-height: 33.33vh !important;}
+.cbsd-height-50vh {min-height: 50vh !important;}
+.cbsd-height-75vh {min-height: 75vh !important;}
+.cbsd-height-100vh {min-height: 100vh !important;}
+
+
 /* element classes */
 .cbsd-shadow-dark {
     -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
@@ -209,6 +219,18 @@
     padding-right: 0;
 }
 
+.cbsd-text-abscentered, .cbsd-hl-abscentered, .cbsd-link-abscentered {
+    position: relative;
+}
+
+.cbsd-hl-abscentered h1, .cbsd-hl-abscentered h2, .cbsd-hl-abscentered h3,
+.cbsd-hl-abscentered h4, .cbsd-hl-abscentered h5, .cbsd-hl-abscentered h6 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
 
 
 

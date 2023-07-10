@@ -5,8 +5,8 @@
        <trans-unit id="tl_article.cbsd_article_container.0">
               <source>Containerclass</source>
        </trans-unit>
-       <trans-unit id="tl_article.cbsd_article_container.0">
-              <source>Places the articles content in a container</source>
+       <trans-unit id="tl_article.cbsd_article_container.1">
+              <source>Place the articles content in a container</source>
        </trans-unit>
        <trans-unit id="tl_article.container">
          <source>Fixed witdh (container)</source>
@@ -14,6 +14,33 @@
        <trans-unit id="tl_article.container-fluid">
          <source>Full width (container-fluid)</source>
        </trans-unit>
+        <trans-unit id="tl_article.cbsd_article_height.0">
+            <source>Minimum article height</source>
+        </trans-unit>
+        <trans-unit id="tl_article.cbsd_article_height.1">
+            <source>Relative to current Viewport height</source>
+        </trans-unit>
+        <trans-unit id="tl_article.height-10vh.0">
+            <source>10%</source>
+        </trans-unit>
+        <trans-unit id="tl_article.height-20vh.0">
+            <source>20%</source>
+        </trans-unit>
+        <trans-unit id="tl_article.height-25vh.0">
+            <source>25%</source>
+        </trans-unit>
+        <trans-unit id="tl_article.height-33vh.0">
+            <source>33%</source>
+        </trans-unit>
+        <trans-unit id="tl_article.height-50vh.0">
+            <source>50%</source>
+        </trans-unit>
+        <trans-unit id="tl_article.height-75vh.0">
+            <source>75%</source>
+        </trans-unit>
+        <trans-unit id="tl_article.height-100vh.0">
+            <source>100%</source>
+        </trans-unit>
         <trans-unit id="tl_article.cbsd_margin.0">
             <source>Margin</source>
         </trans-unit>
