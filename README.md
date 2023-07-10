@@ -55,7 +55,7 @@ There will be new Settings in the Contao Backend:
 - each image element has a new responsive setting
 - each hyperlink and Top-Link element has a new button setting in the Hyperlink Settings area
 - each headline element has an additional setting to change h-class
-- in the article settings under layout there is a new container setting
+- in the article settings under layout there is a new container setting, and certain design settings
 - in the Contao settings - Backend setting there are new settings for default settings
 
 Before creating new articles, change the default container class settings.
@@ -72,7 +72,7 @@ Die Erweiterung ermöglicht neue Einstellungen im Contao Backend:
 - jedes Bildelement hat eine neue Einstellmöglichkeit für die Responsive Darstellung
 - jeder Hyperlink / Top-Link hat in den Hyperlink-Einstellungen die Option, den Link in einen Button zu ändern
 - Jedes Überschrift Element hat unter Design die Option, die h-Klasse des Element zu ändern
-- in den Artikeleinstellungen unter Layout gibt es die Möglichkeit, den Inhalt des Artikels in einen Container setzen
+- in den Artikeleinstellungen unter Layout gibt es die Möglichkeit, den Inhalt des Artikels in einen Container setzen, sowie diverse Design Einstellungen
 - in den Contao Einstellungen - Backend Einstellungen gibt es neue Optionen für Voreinstellungen
 
 Bevor man die Seitenstruktur beginnt einzurichten, sollte man die Voreinstellung für die Container Klasse auswählen.
@@ -113,9 +113,6 @@ There are also three unused special classes (s1,s2,s3) you can use for your spec
 
 ## Future Plans
 - add Bootstrap 5 support
-
-- option_callbacks, funktionen setzen arrays zusammen
-
 
 
 

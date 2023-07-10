@@ -229,6 +229,7 @@
     top: 50%;
     left: 0;
     right: 0;
+    z-index: 2;
     text-align: center;
 }
 
