@@ -11,8 +11,8 @@
         }
     ],
     "support": {
-        "issues": "",
-        "source": ""
+        "issues": "https://github.com/Sarahsolus/contao-bootstrap-designer-plugin/issues/",
+        "source": "https://github.com/Sarahsolus/contao-bootstrap-designer-plugin"
     },
     "require": {
         "php": ">=7.4",
